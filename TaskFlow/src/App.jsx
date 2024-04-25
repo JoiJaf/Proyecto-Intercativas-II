@@ -1,5 +1,5 @@
 import { Header } from "./components/Header.jsx";
-//import {  } from "";
+import { Task } from "./components/TaskCarousel.jsx";
 //import {  } from "";
 
 import "./index.css";
@@ -7,7 +7,10 @@ import "./index.css";
 export function App() {
 
   return (
-    <Header />
+    <div>
+      <Header />
+      <Task />
+    </div>
   );
 }
 
