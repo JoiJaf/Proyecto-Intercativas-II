@@ -4,7 +4,7 @@ import "../index.css";
 
 export function Header() {
     return (
-        <div class="w-full top-0 left-0 fixed">
+        <div classn="w-full top-0 left-0 fixed">
             <header class="flex header items-center bg-white shadow-sm">
                 <img class="w-full h-full max-w-[12vw]" src={logo} />
 
