@@ -6,6 +6,7 @@ import { Stadistics } from "./components/Stadistics.jsx";
 import { VisualElements } from "./components/VisualElements.jsx";
 import { Categories } from "./components/Categories.jsx";
 import { CreateAccount } from "./components/CreateAccount.jsx";
+import { Footer } from "./components/Footer.jsx";
 import {Forms} from "./components/forms/Forms.jsx";
 import {Course} from "./components/Course.jsx";
 //import {  } from "";
@@ -23,6 +24,7 @@ export function App() {
       <VisualElements/>
       <Categories/>
       <CreateAccount/>
+      <Footer/>
     </div>
   );
 }
@@ -36,6 +38,7 @@ export function App() {
 //<Task />
 //<Forms />
 //<Course/>
+//<Footer/>
 
 
 export default App;
