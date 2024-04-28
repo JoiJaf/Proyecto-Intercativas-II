@@ -93,4 +93,21 @@ html{
 }
 }
 
+@keyframes full {
+    30% {
+        background-color: #DD4848;
+    }
+    60% {
+        background-color: #F0EC84;
+    }
+    to {
+        width: 100%;
+        background-color: #6BDD8F;
+    }
+}
+
+.animate-full {
+    animation: full 5s ease-in-out infinite;
+}
+
 

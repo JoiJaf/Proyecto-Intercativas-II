@@ -1,5 +1,7 @@
 import { Header } from "./components/Header.jsx";
 import { Task } from "./components/TaskCarousel.jsx";
+import { Stadistics } from "./components/stadistics.jsx";
+//import {  } from "";
 //import {  } from "";
 
 import "./index.css";
@@ -10,6 +12,8 @@ export function App() {
     <div>
       <Header />
       <Task />
+      <Stadistics />
+
     </div>
   );
 }
