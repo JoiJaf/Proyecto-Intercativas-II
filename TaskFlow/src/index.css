@@ -121,7 +121,6 @@ html {
     font-size: (0.75rem, 1rem, 1.3rem);
 }/* 12px*/
 
-<<<<<<< Updated upstream
 .clamp-md {
     font-size: clamp(1rem, 1.25rem, 1.5625rem);
 }/* 20px*/
@@ -129,7 +128,7 @@ html {
 .clamp-lg {
     font-size: clamp(1.1875rem, 1.5rem, 1.875rem);
 }/* 24px*/
-=======
+
 .header-corto{
     width: 30rem;
     max-height: 2rem;
@@ -201,9 +200,6 @@ html {
     padding: 0;
 }
 
-}
->>>>>>> Stashed changes
-
 .clamp-xl {
     font-size: clamp(1.5rem, 1.875rem, 2.5rem);
 }/*32px*/
@@ -211,3 +207,4 @@ html {
 .clamp-xxl {
     font-size: clamp(1rem, 2rem, 2.188rem);
 }/*35px*/
+
