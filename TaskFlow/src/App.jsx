@@ -16,20 +16,15 @@ import { Course } from "./components/course/Course.jsx";
 //import {  } from "";
 
 import "./index.css";
+import { Settings } from "./components/settings/Settings.jsx";
 
 export function App() {
 
   return (
     <div>
       <Header />
-      <Welcome />
-      <MyProgress />
-      <Stadisticslanding />
-      <VisualElements/>
-      <Categories/>
-      <CreateAccount/>
+      <Settings />
       <Footer/>
-
     </div>
   );
 }
