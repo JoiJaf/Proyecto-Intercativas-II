@@ -1,7 +1,7 @@
-import "../index.css";
-import logoblanco from '../assets/img/logo_v2.png';
-import playstore from '../assets/img/google-play.png';
-import appstore from '../assets/img/ios.png';
+import "../../index.css";
+import logoblanco from '../../assets/img/logo_v2.png';
+import playstore from '../../assets/img/google-play.png';
+import appstore from '../../assets/img/ios.png';
 
 export function Footer(){
     return (

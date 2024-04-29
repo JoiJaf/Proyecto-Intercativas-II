@@ -1,5 +1,5 @@
-import nombrelogo from '../assets/img/nombrelogo.png';
-import "../index.css";
+import nombrelogo from '../../assets/img/nombrelogo.png';
+import "../../index.css";
 
 export function Welcome(){
     return (

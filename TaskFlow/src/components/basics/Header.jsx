@@ -1,10 +1,10 @@
-import logo from '../assets/img/logo.png';
-import user from '../assets/img/user.png';
-import "../index.css";
+import logo from '../../assets/img/logo.png';
+import user from '../../assets/img/user.png';
+import "../../index.css";
 
 export function Header() {
     return (
-        <div classn="w-full top-0 left-0 fixed">
+        <div classname="w-full top-0 left-0 fixed">
             <header class="flex header items-center bg-white shadow-sm">
                 <img class="w-full h-full max-w-[12vw]" src={logo} />
 

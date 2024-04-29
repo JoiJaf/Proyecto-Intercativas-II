@@ -1,9 +1,9 @@
-import "../index.css";
-import user from '../assets/img/user.png';
-import carre from '../assets/img/carre.png';
-import course from '../assets/img/course.png';
-import est from '../assets/img/est.png';
-import uni from '../assets/img/uni.png';
+import "../../index.css";
+import user from '../../assets/img/user.png';
+import carre from '../../assets/img/carre.png';
+import course from '../../assets/img/course.png';
+import est from '../../assets/img/est.png';
+import uni from '../../assets/img/uni.png';
 
 export function Categories(){
     return(

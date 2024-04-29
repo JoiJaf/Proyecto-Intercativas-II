@@ -1,6 +1,6 @@
-import "../index.css";
+import "../../index.css";
 
-export function Stadistics(){
+export function Stadisticslanding(){
     return(
         <section className="mt-[5rem] grid grid-cols-[60%_35%] ml-[8rem] mb-[6rem]">
             <div>

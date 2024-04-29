@@ -1,4 +1,4 @@
-import "../index.css";
+import "../../index.css";
 import { Calendar } from "./Calendar";
 
 export function VisualElements(){

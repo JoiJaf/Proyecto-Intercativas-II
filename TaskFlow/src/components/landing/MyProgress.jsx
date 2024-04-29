@@ -1,5 +1,5 @@
-import { Task } from "./TaskCarousel";
-import "../index.css";
+import { Task } from "../dashboard/TaskCarousel";
+import "../../index.css";
 
 export function MyProgress(){
     return (

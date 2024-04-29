@@ -129,6 +129,14 @@ html {
     font-size: clamp(1.1875rem, 1.5rem, 1.875rem);
 }/* 24px*/
 
+.clamp-xl {
+    font-size: clamp(1.5rem, 1.875rem, 2.5rem);
+}/*32px*/
+
+.clamp-xxl {
+    font-size: clamp(1rem, 2rem, 2.188rem);
+}/*35px*/
+
 .header-corto{
     width: 30rem;
     max-height: 2rem;
@@ -200,7 +208,6 @@ html {
     padding: 0;
 }
 
-<<<<<<< HEAD
 @keyframes full {
     30% {
         background-color: #DD4848;
@@ -218,13 +225,5 @@ html {
     animation: full 5s ease-in-out infinite;
 }
 
-=======
-.clamp-xl {
-    font-size: clamp(1.5rem, 1.875rem, 2.5rem);
-}/*32px*/
 
-.clamp-xxl {
-    font-size: clamp(1rem, 2rem, 2.188rem);
-}/*35px*/
->>>>>>> 746644f94a8e4e9693f6335fead06b30bc8b3aff
 
