@@ -1,6 +1,7 @@
 
 import { Header } from "./components/basics/Header.jsx";
 import { Task } from "./components/dashboard/TaskCarousel.jsx";
+import { Stadistics } from "./components/dashboard/Stadistics.jsx";
 import { Welcome } from "./components/landing/Welcome.jsx";
 import { MyProgress } from "./components/landing/MyProgress.jsx";
 import { Stadisticslanding } from "./components/landing/Stadisticslanding.jsx";
@@ -22,13 +23,8 @@ export function App() {
   return (
     <div>
       <Header />
-      <Welcome />
-      <MyProgress />
-      <Stadisticslanding />
-      <VisualElements/>
-      <Categories/>
-      <CreateAccount/>
-      <Footer/>
+      <Stadistics />
+      <Footer />
 
     </div>
   );
@@ -39,6 +35,7 @@ export function App() {
 
 //DASHBOARD
 //<Task/>
+//<Stadistics/>
 
 //FORMS
 //<Forms/>
