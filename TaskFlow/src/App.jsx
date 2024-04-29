@@ -14,6 +14,10 @@ import { Forms } from "./components/forms/Forms.jsx";
 
 import { Course } from "./components/course/Course.jsx";
 
+import { Cale } from "./components/dashboard/Calendar.jsx";
+import { Category } from "./components/dashboard/Category.jsx";
+import { Upcoming } from "./components/dashboard/Upcoming.jsx";
+
 //import {  } from "";
 
 import "./index.css";
@@ -23,7 +27,7 @@ export function App() {
   return (
     <div>
       <Header />
-      <Stadistics />
+      <Upcoming/>
       <Footer />
 
     </div>

@@ -31,7 +31,7 @@ export function Forms() {
                 </div>
             </section>
 
-            <section className="my-8">
+            <section className="mt-8">
                 <div className="bg-white rounded-lg border border-[#979797] p-8 w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
                     <section className="mb-4">
                         <h3 className="clamp-xxl text-center mb-4">Sign in</h3>

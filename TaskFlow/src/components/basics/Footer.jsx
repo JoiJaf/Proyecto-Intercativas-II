@@ -5,7 +5,7 @@ import appstore from '../../assets/img/ios.png';
 
 export function Footer(){
     return (
-        <section className="bg-[#0E0E0E] pb-[3rem]">
+        <section className="bg-[#0E0E0E] pb-[1rem]">
             <a className="ml-[3rem]" href="logo"><img class="w-full h-full max-w-[12vw] ml-[3rem] mb-[1rem] pt-[2rem]" src={logoblanco} /></a>
             <div className="w-[15rem] ml-[3rem]">
                 <h1 className="text-white">Download Our App</h1>
@@ -29,7 +29,7 @@ export function Footer(){
                 </div>
 
             </div>
-            <h1 className="text-white ml-[75rem]">Todos los derechos reservados</h1>
+            <h1 className="text-white ml-[75rem] pt-[1rem]">Todos los derechos reservados</h1>
         </section>
 
     )

@@ -119,10 +119,10 @@ export function Stadistics() {
                 </div>
 
                 <div className='w-[15vw] stroke-[#6BDD8F]'>
-                    <CircularProgressbarWithChildren value={75}>
+                    <CircularProgressbarWithChildren value={100}>
 
                         <div style={{ fontSize: 12, marginTop: -5 }}>
-                            <strong className='fs_xxl font-bold'>75%</strong>
+                            <strong className='fs_xxl font-bold'>100%</strong>
                         </div>
                     </CircularProgressbarWithChildren>;
                 </div>
