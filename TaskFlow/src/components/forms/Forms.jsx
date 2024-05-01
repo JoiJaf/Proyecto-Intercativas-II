@@ -3,8 +3,8 @@ import "../../index.css";
 export function Forms() {
     return (
     
-        <section className='grid grid-cols-2 gap-6 '>
-            <section className="mt-8">
+        <section className='grid grid-cols-2 gap-6 form-grid-cols-2 '>
+            <section className=" form-mt-8 mt-8  ">
                 <div className="bg-white rounded-lg border border-[#979797] p-8 w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
                     <section className="mb-4">
                         <h3 className="clamp-xxl text-center mb-4">Login</h3>
@@ -31,7 +31,7 @@ export function Forms() {
                 </div>
             </section>
 
-            <section className="my-8">
+            <section className="mt-8 form-mt-8 ">
                 <div className="bg-white rounded-lg border border-[#979797] p-8 w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
                     <section className="mb-4">
                         <h3 className="clamp-xxl text-center mb-4">Sign in</h3>
@@ -45,14 +45,10 @@ export function Forms() {
                                 <input id="password" type="password" name="password" className="form-input border-b-2 border-black w-full" />
                             </div>
                             <div className="flex my-14">
-                                <label htmlFor="emailAddress" className="mb-1 clamp-md">Email Address:</label>
+                                <label htmlFor="emailAddress" className="mb-1 clamp-md">Email:</label>
                                 <input id="emailAddress" type="email" name="emailAddress" className="form-input border-b-2 border-black w-full" />
                             </div>
-                            <div className="flex my-14">
-                                <label htmlFor="fullname" className="mb-1 clamp-md">FullName:</label>
-                                <input id="fullname" type="text" name="fullname" className="form-input border-b-2 border-black w-full" />
-                            </div>
-                           
+                            
                             <div className="mb-4">
                                 <input type="submit" value="LOGIN" className="bg-[#0E0E0E] hover:bg-green-600 text-white py-4 px-4 rounded-md w-full" />
                             </div>

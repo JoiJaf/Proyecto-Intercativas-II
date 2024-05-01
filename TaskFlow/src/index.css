@@ -104,18 +104,19 @@ html {
     }
 }
 @media (max-width: 768px) {
-    .grid-cols-2 {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+    .form-grid-cols-2 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
     }
-    .mt-8 {
-        margin-top: 1rem; /* Agregar espacio arriba en pantallas pequeñas */
-        margin-left: 1.5rem; /* Agregar espacio a la izquierda en pantallas pequeñas */
-        margin-right: 1.5rem; /* Agregar espacio a la derecha en pantallas pequeñas */
-        margin-bottom: 1rem; /* Agregar espacio abajo en pantallas pequeñas */
+    .form-mt-8 {
+        margin-top: 1rem; /* Agrega espacio arriba en pantallas pequeñas */
+        margin-left: .65rem; /* Agrega espacio a la izquierda en pantallas pequeñas */
+        margin-right: .75rem; /* Agrega espacio a la derecha en pantallas pequeñas */
+        margin-bottom: 1rem; /* Agrega espacio abajo en pantallas pequeñas */
     }
 
     
 }
+
 /*clamps*/
 .clamp-sm {
     font-size: (0.75rem, 1rem, 1.3rem);

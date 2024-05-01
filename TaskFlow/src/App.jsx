@@ -21,14 +21,8 @@ export function App() {
 
   return (
     <div>
-      <Header />
-      <Welcome />
-      <MyProgress />
-      <Stadisticslanding />
-      <VisualElements/>
-      <Categories/>
-      <CreateAccount/>
-      <Footer/>
+     
+     <Forms/>
 
     </div>
   );
