@@ -5,7 +5,8 @@ import RoundToggleButton from './ToggleButton';
 export function Settings() {
     return (
 
-        <section className="p-6">
+      <section>
+          <section className="p-6">
             <h2 className="mt-[38px] ml-[30px] clamp-xxl">Settings</h2>
             <div className="grid my-[38px] text-white gap-[38px]">
                 <div className="bg_banner w-full h-[176px] max-lg:h-[340px] rounded-[40px]">
@@ -37,16 +38,48 @@ export function Settings() {
                                     </div>
 
                                     <div className="flex justify-end items-center p-4">
-                                    <input type="submit" value="Accept" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[88px] w-[190px] " />
+                                    <input type="submit" value="Accept" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[88px] w-[190px]" />
                                     </div>
 
                                 </div>
                             </form>
-
                     </div>
                 </div>
-
             </div>  
         </section>
+
+        <section className='mt-[78px]'>
+        <h2 className="my-[38px] ml-[30px] clamp-xxl">Contact with the teacher</h2>
+        <div className='grid grid-cols-2 gap-[38px]'>
+            <div>
+                <img className='ml-[30px] h-[445px]' src="../src/assets/img/contactTeacher.png" alt="contact with the teacher" />
+            </div>
+            
+            <div className='mx-[38px]'>
+                <form method="post" action="#">
+                <div className="flex mb-5">
+                    <label htmlFor="email" className="mb-1 clamp-md"></label>
+                    <input id="email" type="text" name="email" className="form-input w-full h-[79px] rounded-[88px] text-black clamp-lg p-4 border-[#EEEEEE] border-2"/>
+                </div>
+
+                <div className="flex my-5">
+                    <label htmlFor="matter" className="mb-1 clamp-md"></label>
+                    <input id="matter" type="matter" name="matter" className="form-input w-full h-[79px] rounded-[88px] text-black clamp-lg p-4 border-[#EEEEEE] border-2"/>
+                </div>
+
+                <div className="flex mb-14 items-start">
+                    <label htmlFor="message" className="mb-1 clamp-md"></label>
+                    <input id="message" type="text" name="message" className="form-input w-full h-[256px] rounded-[40px] text-black clamp-lg p-4 border-[#EEEEEE] border-2 items-left"/>
+                </div>
+
+                <div className="flex justify-end items-center p-4 mb-[114px]">
+                    <input type="submit" value="Send" className="bg-[#323233] clamp-lg text-white py-4 px-4 rounded-[88px] w-[190px]" />
+                </div>
+                </form>
+            </div>
+        </div>                                                     
+        </section>
+      </section>
+      
     )
 }
