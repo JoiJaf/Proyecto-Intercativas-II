@@ -13,6 +13,8 @@ import { Forms } from "./components/forms/Forms.jsx";
 
 import { Course } from "./components/course/Course.jsx";
 
+import { Profile } from "./components/profile/Profile.jsx";
+
 //import {  } from "";
 
 import "./index.css";
@@ -22,12 +24,7 @@ export function App() {
   return (
     <div>
       <Header />
-      <Welcome />
-      <MyProgress />
-      <Stadisticslanding />
-      <VisualElements/>
-      <Categories/>
-      <CreateAccount/>
+      <Profile />
       <Footer/>
 
     </div>
