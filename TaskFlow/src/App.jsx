@@ -21,9 +21,10 @@ export function App() {
 
   return (
     <div>
-     
-     <Forms/>
 
+      <Header />
+      <Forms/>
+     
     </div>
   );
 }
