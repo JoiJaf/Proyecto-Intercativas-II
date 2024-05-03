@@ -22,9 +22,7 @@ export function App() {
   return (
     <div>
 
-      <Header />
-      <Forms/>
-     
+    
     </div>
   );
 }
@@ -39,12 +37,14 @@ export function App() {
 //<Forms/>
 
 //WELCOME PAGE
+//<Header />
 //<Welcome />
 //<MyProgress />
 //<Stadisticslanding />
 //<VisualElements/>
 //<Categories/>
 //<CreateAccount/>
+//<Footer />
 //!!!!!!!!!!!!
 
 export default App;

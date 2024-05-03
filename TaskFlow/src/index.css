@@ -111,7 +111,7 @@ html {
     }
 
     .form-mt-8 {
-        margin-top: 6rem;
+        margin-top: 1rem;
         /* Agrega espacio arriba en pantallas pequeñas */
         margin-left: .65rem;
         /* Agrega espacio a la izquierda en pantallas pequeñas */
@@ -237,6 +237,14 @@ html {
 
     .mb-mr-6{
      margin-right: .1rem;
+    }
+    .mb-logo-footer{
+        padding-top: 0;
+        max-width: 130px;
+
+    }
+    .mb-footer-imgs{
+        width:7rem;
     }
 
 }
