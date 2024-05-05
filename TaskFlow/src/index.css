@@ -105,24 +105,154 @@ html {
 }
 
 @media (max-width: 768px) {
-    .grid-cols-2 {
+
+
+    .form-grid-cols-2 {
         grid-template-columns: 1fr;
-        /* Cambiar a una sola columna en pantallas pequeñas */
+        /* Cambia a una sola columna en pantallas pequeñas */
     }
 
-    .mt-8 {
+    .form-mt-8 {
         margin-top: 1rem;
-        /* Agregar espacio arriba en pantallas pequeñas */
-        margin-left: 1.5rem;
-        /* Agregar espacio a la izquierda en pantallas pequeñas */
-        margin-right: 1.5rem;
-        /* Agregar espacio a la derecha en pantallas pequeñas */
+        /* Agrega espacio arriba en pantallas pequeñas */
+        margin-left: .65rem;
+        /* Agrega espacio a la izquierda en pantallas pequeñas */
+        margin-right: .75rem;
+        /* Agrega espacio a la derecha en pantallas pequeñas */
         margin-bottom: 1rem;
-        /* Agregar espacio abajo en pantallas pequeñas */
+        /* Agrega espacio abajo en pantallas pequeñas */
     }
 
+    /*mobile check*/
+    .mobile-btn {
+        position: fixed;
+        top: 2rem;
+        right: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        z-index: 3;
+    }
+
+    .mobile-btn>span,
+    .mobile-btn>span::before,
+    .mobile-btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: .2rem;
+        background: white;
+        transition-duration: .25s;
+    }
+
+    .mobile-btn>span::before {
+        content: '';
+        top: -.5rem;
+    }
+
+    .mobile-btn>span::after {
+        content: '';
+        top: .5rem;
+    }
+
+    /* mobile check */
+    .mobile-check {
+        opacity: 0;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 4;
+    }
+
+    .mobile-check:checked+.mobile-btn>span {
+        transform: rotate(45deg);
+    }
+
+    .mobile-check:checked+.mobile-btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    .mobile-check:checked+.mobile-btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .mobile-check:checked~.home-list {
+        right: 0;
+        /* Cuando .mobile-check está marcado, la lista se desplaza a la posición deseada */
+    }
+
+
+    /* mobile check */
+
+
+    .home-list {
+        display: grid;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        right: -13rem;
+        width: 50%;
+        height: 100vh;
+        background: black;
+        padding-left: 5rem;
+        z-index: 2;
+        align-content: center;
+        gap: 4rem;
+        transition: right 0.5s;
+    }
+
+    .user-image {
+        display: none; /* Oculta la imagen del usuario en su posición original */
+    }
+
+    .home-list .user-image {
+        display: flex; /* Muestra la imagen del usuario en el home list */
+        align-items: center; /* Alinea la imagen verticalmente en el home list */
+    }
+
+    /* moobile bg header*/
+    .mb-header-bg {
+        background: #0E0E0E;
+    }
+
+    .mb-logo {
+        max-width: 130px;
+        margin: 1rem;
+        
+    }
+
+    .mb-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    .mb-search {
+        padding: 0;
+    }
+
+    .mb-text{
+        font-size: 1rem;
+    }
+
+    .mb-mr-6{
+     margin-right: .1rem;
+    }
+    .mb-logo-footer{
+        padding-top: 0;
+        max-width: 130px;
+
+    }
+    .mb-footer-imgs{
+        width:7rem;
+    }
 
 }
+
+
+
 
 /*clamps*/
 .clamp-sm {
@@ -244,6 +374,7 @@ html {
 .animate-full {
     animation: full 5s ease-in-out infinite;
 }
+
 
 /* calendar  */
 
@@ -406,3 +537,5 @@ html {
   }
 
   /* fin calendar ----------------------------------------------------------- */
+
+
