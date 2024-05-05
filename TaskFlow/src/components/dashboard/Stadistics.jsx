@@ -60,21 +60,20 @@ export function Stadistics() {
     }, []);
 
     useEffect(() => {
-        function time() {
+        const intervalTime = setInterval(() => {
             const fecha = new Date();
             const hours = ((fecha.getHours() < 10) ? "0" : "") + fecha.getHours();
             const minutes = ((fecha.getMinutes() < 10) ? "0" : "") + fecha.getMinutes();
-
+            setCurrentTime(`${hours}:${minutes}`);
             document.getElementById('time').innerHTML = hours + ":" + minutes;
-        }
-
-        time();
+        }, 1000);
+        return () => clearInterval(intervalTime);
     }, []);
-
+    
     // Fecha y hora en tiempo real -----------------------
 
     const value = 0;
-
+    
     <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} styles={{}} />;
 
     return (

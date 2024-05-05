@@ -38,7 +38,7 @@ export function App() {
   return (
     <div>
       <Header />
-      <TaskCal />
+      <Stadistics />
       <Footer />
       
     </div>
