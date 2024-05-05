@@ -5,6 +5,8 @@ import "../../index.css";
 
 export function Header() {
     return (
+
+
         <div className="w-full top-0 left-0 fixed ">
             <header className="flex header items-center bg-white shadow-sm mb-header-bg"> 
                     <img className="max-w-full mr-5 h-auto  mb-logo hidden sm:block" src={logo} />
@@ -20,6 +22,7 @@ export function Header() {
                             <path d="M21 21l-6 -6" />
                         </svg>
                     </div>
+
 
                     <div className="flex items-center gap-6 ">
                         <input className="mobile-check sm:hidden" type="checkbox" />

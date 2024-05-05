@@ -6,6 +6,7 @@ import appstore from '../../assets/img/ios.png';
 export function Footer() {
     return (
 
+
         <footer class="footer-container bg-[#0E0E0E]">
             <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-80vw gap-6 text-white form-grid-cols-2">
                 <section >
@@ -16,6 +17,7 @@ export function Footer() {
                             <div className="mb-footer-imgs"><img src={playstore} /></div>
                             <div className="mb-footer-imgs"><img src={appstore} /></div>
                         </div>
+
                     </div>
                 </section>
                 <div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 py-10">
@@ -48,8 +50,10 @@ export function Footer() {
                     </section>
                 </div>
             </div>
+
             <p class="text-center text-white py-10"> @All rights reserved</p>
         </footer>
+
 
 
     )
