@@ -30,6 +30,8 @@ import { TaskCal } from "./components/schedule/TaskCal.jsx";
 import { Tasks } from "./components/schedule/Task.jsx";
 // schedule ----------
 
+import { Profile } from "./components/profile/Profile.jsx";
+
 //import {  } from "";
 
 import "./index.css";
