@@ -8,6 +8,7 @@ import { VisualElements } from "./components/landing/VisualElements.jsx";
 import { Categories } from "./components/landing/Categories.jsx";
 import { CreateAccount } from "./components/landing/CreateAccount.jsx";
 import { Footer } from "./components/basics/Footer.jsx";
+import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx"
 
 import { Forms } from "./components/forms/Forms.jsx";
 
@@ -21,15 +22,8 @@ export function App() {
 
   return (
     <div>
-      <Header />
-      <Welcome />
-      <MyProgress />
-      <Stadisticslanding />
-      <VisualElements/>
-      <Categories/>
-      <CreateAccount/>
-      <Footer/>
-
+      <CoursesElements/>
+      
     </div>
   );
 }
@@ -44,12 +38,14 @@ export function App() {
 //<Forms/>
 
 //WELCOME PAGE
+//<Header />
 //<Welcome />
 //<MyProgress />
 //<Stadisticslanding />
 //<VisualElements/>
 //<Categories/>
 //<CreateAccount/>
+//<Footer />
 //!!!!!!!!!!!!
 
 export default App;
