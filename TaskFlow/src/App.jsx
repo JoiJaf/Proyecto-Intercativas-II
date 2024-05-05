@@ -22,9 +22,7 @@ export function App() {
 
   return (
     <div>
-      <Header />
       <Settings />
-      <Footer/>
     </div>
   );
 }
