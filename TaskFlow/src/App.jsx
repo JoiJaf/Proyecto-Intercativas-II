@@ -30,11 +30,16 @@ import { TaskCal } from "./components/schedule/TaskCal.jsx";
 import { Tasks } from "./components/schedule/Task.jsx";
 // schedule ----------
 
+import { Profile } from "./components/profile/Profile.jsx";
+
 //import {  } from "";
 
 import "./index.css";
 import { Settings } from "./components/settings/Settings.jsx";
 
+import { Notification } from "./components/windows/Notification.jsx";
+import { AddEvent } from "./components/windows/AddEvent.jsx";
+// windows ---
 export function App() {
 
   return (
