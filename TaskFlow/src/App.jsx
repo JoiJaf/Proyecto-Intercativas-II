@@ -39,7 +39,10 @@ export function App() {
 
   return (
     <div>
-      
+      <Header />
+      <TaskCal />
+      <Footer />
+
     </div>
   );
 }
