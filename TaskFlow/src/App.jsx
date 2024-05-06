@@ -16,11 +16,7 @@ import { Forms } from "./components/forms/Forms.jsx";
 import { Course } from "./components/course/Course.jsx";
 
 //dashboard ---------
-import { Cale } from "./components/dashboard/Calendar.jsx";
-import { Category } from "./components/dashboard/Category.jsx";
-import { Upcoming } from "./components/dashboard/Upcoming.jsx";
-import { Stadistics } from "./components/dashboard/Stadistics.jsx";
-import { Task } from "./components/dashboard/TaskCarousel.jsx";
+import { Dashboard } from "./components/dashboard/Dashboard.jsx";
 //dashboard ---------
 
 // schedule ----------
@@ -45,7 +41,7 @@ export function App() {
   return (
     <div>
       <Header />
-      <TaskCal />
+      <Dashboard/>
       <Footer />
 
     </div>

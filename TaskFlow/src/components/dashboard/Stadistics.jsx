@@ -77,7 +77,7 @@ export function Stadistics() {
     <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} styles={{}} />;
 
     return (
-        <section className="mx-[3.5rem] flex p-[2.5rem]">
+        <section className="mx-[3.5rem] md:flex p-[2.5rem]">
 
             <div className="mx-[2vw] grid border-solid border-2 border-[#E0E0E0] w-[25vw] h-[15vw] p-[2rem] rounded-[3rem]">
                 <p className="fs_md font-semibold">Today is</p>
@@ -86,7 +86,7 @@ export function Stadistics() {
                 <p className="pt-[2vw] pb-[1rem] fs_xl font-semibold text-right" id='time'></p>
             </div>
 
-            <div className='flex gap-[1vw]'>
+            <div className='md:flex gap-[1vw]'>
 
                 <div>
                     <h2 class="fs_xl m-[0] block">Estadistics</h2>
@@ -117,10 +117,10 @@ export function Stadistics() {
 
                 </div>
 
-                <div className='w-[15vw] stroke-[#6BDD8F]'>
+                <div className='w-[15vw] z-0'>
                     <CircularProgressbarWithChildren value={100}>
 
-                        <div style={{ fontSize: 12, marginTop: -5 }}>
+                        <div style={{ fontSize: 12 }}>
                             <strong className='fs_xxl font-bold'>100%</strong>
                         </div>
                     </CircularProgressbarWithChildren>;

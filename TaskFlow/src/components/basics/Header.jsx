@@ -7,7 +7,7 @@ export function Header() {
     return (
 
 
-        <div className="w-full top-0 left-0 fixed ">
+        <div className="w-full top-0 left-0 fixed z-10">
             <header className="flex header items-center bg-white shadow-sm mb-header-bg"> 
                     <img className="max-w-full mr-5 h-auto  mb-logo hidden sm:block" src={logo} />
                     <img className="max-w-full h-auto  mb-logo sm:hidden" src={logoSmall} />
