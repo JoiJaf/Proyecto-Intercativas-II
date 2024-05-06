@@ -37,6 +37,9 @@ import { Profile } from "./components/profile/Profile.jsx";
 import "./index.css";
 import { Settings } from "./components/settings/Settings.jsx";
 
+import { Notification } from "./components/windows/Notification.jsx";
+import { AddEvent } from "./components/windows/AddEvent.jsx";
+// windows ---
 export function App() {
 
   return (

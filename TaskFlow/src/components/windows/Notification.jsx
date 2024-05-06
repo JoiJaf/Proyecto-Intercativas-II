@@ -11,8 +11,8 @@ export function Notification(){
                     <h1 className="text-[2.5rem] ml-[1rem] text-[#FFFFFF]">Notifications</h1>
                 
 
-                <div className="mt-[-1rem]">
-                    <a className="text-[3rem] text-[#FFFFFF]" href="">-</a>
+                    <div className="mt-[-1rem]">
+                        <a className="text-[3rem] text-[#FFFFFF]" href="">-</a>
                     </div>
                 </div>
                 <h2 className="ml-[1rem] pb-[1rem] text-[#787878]">You have 2 new messages and one notification</h2>
