@@ -39,7 +39,7 @@ export function App() {
 
   return (
     <div>
-      
+      <Settings/>
     </div>
   );
 }
