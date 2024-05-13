@@ -1,24 +1,20 @@
 import { Cale } from "./Calendar.jsx";
 import { Category } from "./Category.jsx";
-import { Upcoming } from "./Upcoming.jsx";
 import { Stadistics } from "./Stadistics.jsx";
 import { Task } from "./TaskCarousel.jsx";
+import { Today } from "./Today.jsx";
 
 export function Dashboard() {
 
     return (
         <div>
             <Task />
-            <Stadistics />
-            <div className="mx-[4rem] md:grid grid-cols-[40vw_minmax(50vw,_1fr)_100px] mb-[2rem] ">
-                <Category />
-                <div>
-                    <Cale />
-                    <Upcoming />
-                </div>
-
+            <div className="flex bg-[#FCF8EC] mt-[2rem] pt-[2rem] pb-[4rem]">
+                <Today />
+                <Cale />
             </div>
-
+            <Stadistics />
+            <Category />
         </div>
     )
 }

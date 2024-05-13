@@ -20,10 +20,7 @@ import { Dashboard } from "./components/dashboard/Dashboard.jsx";
 //dashboard ---------
 
 // schedule ----------
-import { InfoWeek } from "./components/schedule/InfoWeek.jsx";
-import { TaskToday } from "./components/schedule/TaskToday.jsx";
-import { TaskCal } from "./components/schedule/TaskCal.jsx";
-import { Tasks } from "./components/schedule/Task.jsx";
+import { Schedule } from "./components/schedule/Schedule.jsx";
 // schedule ----------
 
 import { Profile } from "./components/profile/Profile.jsx";
