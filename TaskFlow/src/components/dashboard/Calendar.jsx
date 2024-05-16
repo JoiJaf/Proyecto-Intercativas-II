@@ -2,9 +2,14 @@ import "../../index.css";
 
 import { useState } from 'react';
 import Calendar from 'react-calendar';
+<<<<<<< Updated upstream
 import 'react-calendar/dist/Calendar.css';
 
 
+=======
+//import 'react-calendar/dist/Calendar.css';
+import "../../index.css";
+>>>>>>> Stashed changes
 
 export function Cale() {
 

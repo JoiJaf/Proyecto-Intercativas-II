@@ -3,7 +3,7 @@ import user from '../../assets/img/user.png';
 
 export function Notification(){
     return(
-    <section className="w-[30rem] ml-[30rem] mb-[3rem]">
+    <section className="w-[30rem] ml-[30rem] mt-[10vw] mb-[3rem]">
         <div className="bg-[#6BDD8F]">
             <div>
 

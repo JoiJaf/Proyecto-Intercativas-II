@@ -123,7 +123,7 @@ export function Stadistics() {
                         <div style={{ fontSize: 12, marginTop: -5 }}>
                             <strong className='fs_xxl font-bold'>100%</strong>
                         </div>
-                    </CircularProgressbarWithChildren>;
+                    </CircularProgressbarWithChildren>
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ export function Profile() {
 
     return (
         <section>
-            <h2 className="mt-[38px] ml-[38px] clamp-xxl">My profile</h2>
+            <h2 className="mt-[10vw] ml-[38px] clamp-xxl">My profile</h2>
             <div class="flex justify-end mr-[38px]">
                 <span id="editText" class="text-blue-500">Edit</span>
             </div>

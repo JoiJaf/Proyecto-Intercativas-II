@@ -7,7 +7,7 @@ import { EventDescription } from "./EventDescription";
 export function AddEvent(){
     
     return(
-        <form className="ml-[30rem]  w-[30rem] rounded-lg border border-[#979797] mb-[3rem] ">
+        <form className="ml-[30rem] mt-[10vw] w-[30rem] rounded-lg border border-[#979797] mb-[3rem] ">
             <div className="grid grid-cols-[90%_5%]  bg-[#6BDD8F] rounded-t-lg">
                 <h1 className="text-[2.5rem] text-center pl-[2rem] text-[#FFFFFF] py-[1rem]">New Event</h1>
                 
