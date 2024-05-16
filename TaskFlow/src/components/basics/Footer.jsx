@@ -8,11 +8,11 @@ export function Footer() {
 
 
         <footer class="footer-container bg-[#0E0E0E]">
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-80vw gap-6 text-white form-grid-cols-2">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-80vw gap-6 text-[#CCCCCC] form-grid-cols-2">
                 <section >
                     <div className="w-60 ml-12 sm:ml-12 mt-4 sm:mt-0">
                         <a className="ml-12 " href="logo"><img class="max-w-full h-auto mb-4 pt-8  mb-logo-footer" src={logoblanco} /></a>
-                        <h1 className="text-white">Download Our App</h1>
+                        <h1 className="text-[#CCCCCC]">Download Our App</h1>
                         <div className="grid grid-cols-2 gap-4 ">
                             <div className="mb-footer-imgs"><img src={playstore} /></div>
                             <div className="mb-footer-imgs"><img src={appstore} /></div>
@@ -20,10 +20,10 @@ export function Footer() {
 
                     </div>
                 </section>
-                <div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 py-10">
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 py-14">
                     <section className="grid items-center justify-center ">
                         <h3>Get to Know Us</h3>
-                        <ul class="p-0">
+                        <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Learn</a></li>
                             <li><a href="#">Discover</a></li>
@@ -40,7 +40,7 @@ export function Footer() {
                     </section>
                     <section className="grid items-center justify-center ">
                         <h3></h3>
-                        <ul class="p-0 ">
+                        <ul>
                             <li><a href="#">Your Account</a></li>
                             <li><a href="#">Your Reservations</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -51,7 +51,7 @@ export function Footer() {
                 </div>
             </div>
 
-            <p class="text-center text-white py-10"> @All rights reserved</p>
+            <p class="text-center text-[#CCCCCC] py-10"> @All rights reserved</p>
         </footer>
 
 

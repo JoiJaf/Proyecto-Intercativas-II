@@ -1,5 +1,4 @@
-
-import { Header } from "./components/basics/Header.jsx";
+import  {Header} from "./components/basics/Header.jsx"
 
 
 import { Welcome } from "./components/landing/Welcome.jsx";
@@ -36,6 +35,7 @@ import { AddEvent } from "./components/windows/AddEvent.jsx";
 export function App() {
 
   return (
+
     <div>
       <Header />
       <Dashboard/>
