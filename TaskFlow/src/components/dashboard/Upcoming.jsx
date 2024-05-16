@@ -3,21 +3,21 @@ import "../../index.css";
 export function Upcoming() {
 
     return (
-        <section className="m-[4vw] pt-[4rem] flex gap-[2rem]">
+        <section className="flex gap-[2rem]">
             <div className="border-2 rounded-[4rem] p-[2rem] text-center w-[12vw]">
-                <p className="fs_xxl font-bold">I semester 6th <br /> week</p>
+                <p className="fs_xxl font-bold">I semester 6th week</p>
             </div>
 
             <div className="grid">
-                <div className="flex items-center justify-between">
-                    <h2 class="fs_xl ">Upcoming</h2>
+                <div className="flex items-center justify-between pb-2">
+                    <h2 class="fs_lg ">Upcoming</h2>
                     <a href="" className="fs_lg clr_gray">View all</a>
                 </div>
 
                 <div className="border-2 rounded-[4rem] p-[2rem] flex gap-[4rem] items-center">
-                    <img className="w-full max-w-[20rem]" src="https://www.impresoras3d.com/wp-content/uploads/2018/01/Meshmixer-3D.jpg" alt="" />
+                    <img className="w-full max-w-[10rem]" src="https://www.impresoras3d.com/wp-content/uploads/2018/01/Meshmixer-3D.jpg" alt="" />
                     <div>
-                        <p className="fs_xl font-light pb-[.8rem]">3D Desing Learning</p>
+                        <p className="fs_lg font-light pb-[.8rem]">3D Desing Learning</p>
                         <p className="fs_md font-semibold pb-[.8rem]">Web Design</p>
                         <p className="fs_md font-light">April 15 | 0%</p>
                         <div class="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2.5">

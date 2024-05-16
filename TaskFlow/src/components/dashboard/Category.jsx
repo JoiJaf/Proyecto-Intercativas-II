@@ -7,7 +7,7 @@ import "../../index.css";
 export function Category() {
 
     return (
-        <div className="m-[2vw] pt-[8rem]">
+        <div className="m-[2vw]">
 
             <h2 class="fs_xl pl-[5vw] mb-[1vw] ">Categories</h2>
             <div className='grid gap-y-[1vw]'>

@@ -6,6 +6,7 @@ import "../../index.css";
 import React, { useState } from 'react';
 
 export function Header() {
+
   const [isOpen, setIsOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
 
