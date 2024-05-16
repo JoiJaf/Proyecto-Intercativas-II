@@ -1,4 +1,4 @@
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo-blanco.png';
 import user from '../../assets/img/user.png';
 import logoSmall from '../../assets/img/logo_v2.png'
 import "../../index.css";
@@ -240,6 +240,7 @@ export function Header() {
               </button>
             </div>
           </div>
+
         </div>
       </div>
     </nav>
