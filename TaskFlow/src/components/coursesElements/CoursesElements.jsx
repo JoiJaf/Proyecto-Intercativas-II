@@ -61,6 +61,24 @@ export function CoursesElements() {
                                 <input type="checkbox" id="myCheckbox" className="custom-checkbox " />
                                
                             </div>
+                            <div className="flex bg-gray-100 rounded-2xl p-4 w-full items-center">
+                                <img src={taskImg} alt="Task" />
+                                <div className="flex flex-col items-center justify-center flex-1">
+                                    <h2 className="text-xl font-semibold text-center">Task Title</h2>
+                                    <p className="text-gray-500 text-center">Task Description</p>
+                                </div>
+                                <input type="checkbox" id="myCheckbox" className="custom-checkbox " />
+                               
+                            </div>
+                            <div className="flex bg-gray-100 rounded-2xl p-4 w-full items-center">
+                                <img src={taskImg} alt="Task" />
+                                <div className="flex flex-col items-center justify-center flex-1">
+                                    <h2 className="text-xl font-semibold text-center">Task Title</h2>
+                                    <p className="text-gray-500 text-center">Task Description</p>
+                                </div>
+                                <input type="checkbox" id="myCheckbox" className="custom-checkbox " />
+                               
+                            </div>
                            
                           
 

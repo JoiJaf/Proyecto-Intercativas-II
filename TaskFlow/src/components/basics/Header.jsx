@@ -1,6 +1,4 @@
 import logo from '../../assets/img/logo-blanco.png';
-import user from '../../assets/img/user.png';
-import logoSmall from '../../assets/img/logo_v2.png'
 import "../../index.css";
 
 import React, { useState } from 'react';
@@ -19,24 +17,24 @@ export function Header() {
   };
 
   return (
-    <nav className="relative bg-[#0E0E0E] ">
+    <nav className="sticky top-0 bg-[#0E0E0E] z-50">
       <div className="container px-6 py-4 mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <a href="#">
-            <img className="w-auto h-6 sm:h-9" src={logoSmall} alt="" />
+            <img className="w-auto h-6 sm:h-9 object-contain" src={logo} alt="" />
           </a>
 
         </div>
 
         <div className="flex items-center">
           <div className="flex">
-            <div className="relative mr-4">
+            <div className="relative mr-4 pl-2 ">
               <input
                 type="text"
                 value={searchValue}
                 onChange={handleSearchChange}
                 placeholder="Buscar..."
-                className={`  sm:px-2 py-1 lg:px-16 rounded-full border border-gray-400 focus:outline-none focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 ${isOpen && 'hidden lg:block'}`}
+                className={` py-1 sm:py-2 lg:px-16 sm:w-full w-40 rounded-full border border-gray-400 focus:outline-none focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 ${isOpen && 'hidden lg:block'}`}
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -77,7 +75,7 @@ export function Header() {
                 </button>
               </div>
 
-              <a href="#" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home w-6 h-6 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24" stroke="#CCCCCC"
                   fill="none"
@@ -115,7 +113,7 @@ export function Header() {
                 Calendar
               </a>
 
-              <a href="#" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/coursesPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book w-6 h-6 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke="#CCCCCC"
@@ -150,7 +148,7 @@ export function Header() {
 
           <div className={`hidden lg:flex lg:items-center ml-4`}>
             <div className="flex flex-col -mx-4 lg:flex-row lg:items-center lg:mx-6">
-              <a href="#" class="flex items-center px-3 py-2 mx-3 mt-2 text-gray-200 hover:text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100 hover:rounded-md">
+              <a href="/" class="flex items-center px-3 py-2 mx-3 mt-2 text-gray-200 hover:text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100 hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -184,7 +182,7 @@ export function Header() {
                 Calendar
               </a>
 
-              <a href="#" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/coursesPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"

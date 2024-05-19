@@ -1,4 +1,4 @@
-import  {Header} from "./components/basics/Header.jsx"
+import { Header } from "./components/basics/Header.jsx"
 
 
 import { Welcome } from "./components/landing/Welcome.jsx";
@@ -13,6 +13,8 @@ import { CoursesElements } from "./components/coursesElements/CoursesElements.js
 import { Forms } from "./components/forms/Forms.jsx";
 
 import { Course } from "./components/course/Course.jsx";
+import { CoursesPage } from "./components/routes/CoursesPage.jsx"
+import { Home } from "./components/routes/Home.jsx";
 
 //dashboard ---------
 import { Dashboard } from "./components/dashboard/Dashboard.jsx";
@@ -32,19 +34,25 @@ import { Settings } from "./components/settings/Settings.jsx";
 import { Notification } from "./components/windows/Notification.jsx";
 import { AddEvent } from "./components/windows/AddEvent.jsx";
 // windows ---
+
+//Routes
+import {  Navigate, Route, Routes } from "react-router-dom";
 export function App() {
 
   return (
 
-    <div>
+    <div className="bg-[#FCF8EC]">
       <Header />
-      <Dashboard/>
-      <Footer />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coursesPage" element={<CoursesPage />} />
+        <Route path="/*" element={ <Navigate to="/" />}/>
+      </Routes>
     </div>
   );
 }
 
+//<Route path="/*" element={ <Navigate to="/" />}
 //COURSE
 //<Course/>
 
