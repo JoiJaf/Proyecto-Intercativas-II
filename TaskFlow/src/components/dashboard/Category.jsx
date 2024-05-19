@@ -7,30 +7,45 @@ import "../../index.css";
 export function Category() {
 
     return (
-        <div className="m-[2vw] pt-[8rem]">
+        <div className="bg-[#FCF8EC] pt-[8vw] pb-[4vw] px-[10vw]">
 
-            <h2 class="fs_xl pl-[5vw] mb-[1vw] ">Categories</h2>
-            <div className='grid gap-y-[1vw]'>
-                <a href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw]'>
-                    <img src={carrera} alt="Carreer" />
-                    <p className='clamp-lg m-[auto]'>Careers</p>
-                </a>
+            <div>
+                <div className='grid gap-[1vw] grid-cols-2'>
 
-                <a href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw]'>
-                    <img src={course} alt="Carreer" />
-                    <p className='clamp-lg m-[auto]'>Courses</p>
-                </a>
+                    <div href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw] bg-white'>
+                        <img src={carrera} alt="Carreer" />
+                        <p className='clamp-lg m-[auto]'>Careers</p>
+                        <button className='bg-[#212121] py-[.5vw] px-[1.5vw] text-[#fff] rounded-[1rem] mt-[6vw]'>
+                            View all ~
+                        </button>
+                    </div>
 
-                <a href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw]'>
-                    <img src={uni} alt="Carreer" />
-                    <p className='clamp-lg m-[auto]'>University</p>
-                </a>
+                    <div href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw] bg-white'>
+                        <img src={course} alt="Carreer" />
+                        <p className='clamp-lg m-[auto]'>Courses</p>
+                        <button className='bg-[#212121] py-[.5vw] px-[1.5vw] text-[#fff] rounded-[1rem] mt-[6vw]'>
+                            View all ~
+                        </button>
+                    </div>
 
-                <a href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw]'>
-                    <img src={students} alt="Carreer" />
-                    <p className='clamp-lg m-[auto]'>Student </p>
-                </a>
+                    <div href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw] bg-white'>
+                        <img src={uni} alt="Carreer" />
+                        <p className='clamp-lg m-[auto]'>University</p>
+                        <button className='bg-[#212121] py-[.5vw] px-[1.5vw] text-[#fff] rounded-[1rem] mt-[6vw]'>
+                            View all ~
+                        </button>
+                    </div>
+
+                    <div href='' className='p-[2vw] flex place-items-center border-2 rounded-[2vw] bg-white'>
+                        <img src={students} alt="Carreer" />
+                        <p className='clamp-lg m-[auto]'>Student </p>
+                        <button className='bg-[#212121] py-[.5vw] px-[1.5vw] text-[#fff] rounded-[1rem] mt-[6vw]'>
+                            View all ~
+                        </button>
+                    </div>
+                </div>
             </div>
+
 
         </div>
     )

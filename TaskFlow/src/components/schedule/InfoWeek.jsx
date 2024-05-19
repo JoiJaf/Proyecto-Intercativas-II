@@ -3,8 +3,8 @@ import "../../index.css";
 export function InfoWeek() {
 
     return (
-        <div className="bg_banner mt-[12rem] mx-[4rem] mb-[4rem] px-[4vw] py-[1.5vw]">
-            <p className="text-[#fff] fs_md pl-[1rem] pb-6">Fr, Ap, 2024</p>
+        <div className="bg-[#212121] mt-[8em] mx-[4rem] mb-[3rem] px-[4vw] py-[1.5vw] rounded-[2rem]">
+            <p className="text-[#fff] fs_md pl-[1rem] pb-4">Fr, Ap, 2024</p>
             <div className="flex justify-between">
                 <button className="bg-[#6BDD8F] p-[3vw] rounded-full font-semibold fs_md">
                     12
