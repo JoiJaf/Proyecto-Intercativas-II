@@ -55,9 +55,11 @@ export function Stadistics() {
                             <div style={{ fontSize: 12 }}>
                                 <strong className='fs_xxl font-bold text-[#fff]'>{progress}%</strong>
 
+
                             </div>
                         </CircularProgressbarWithChildren>;
                     </div>
+
                 </div>
 
             </div>

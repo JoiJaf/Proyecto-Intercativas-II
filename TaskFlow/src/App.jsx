@@ -1,3 +1,4 @@
+
 import  {Header} from "./components/basics/Header.jsx"
 
 
@@ -8,7 +9,7 @@ import { VisualElements } from "./components/landing/VisualElements.jsx";
 import { Categories } from "./components/landing/Categories.jsx";
 import { CreateAccount } from "./components/landing/CreateAccount.jsx";
 import { Footer } from "./components/basics/Footer.jsx";
-import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx"
+import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx";
 
 import { Forms } from "./components/forms/Forms.jsx";
 
@@ -33,10 +34,10 @@ import { Notification } from "./components/windows/Notification.jsx";
 import { AddEvent } from "./components/windows/AddEvent.jsx";
 // windows ---
 export function App() {
-
   return (
 
     <div>
+
       <Header />
       <Dashboard/>
       <Footer />
@@ -48,9 +49,24 @@ export function App() {
 //COURSE
 //<Course/>
 
+//PROFILE
+//<Profile/>
+
 //DASHBOARD
-//<Task/>
-//<Stadistics/>
+//<Dashboard/>
+
+//SETTINGS
+//<Settings/>
+
+//WINDOWS
+//<AddEvent/>
+//<Notification/>
+
+//SCHEDULE
+//<InfoWeek/>
+//<TaskToday/>
+//<TaskCal/>
+// <Tasks/>
 
 //FORMS
 //<Forms/>
