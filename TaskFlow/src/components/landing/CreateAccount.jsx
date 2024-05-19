@@ -1,13 +1,21 @@
 import "../../index.css";
 
-
-export function CreateAccount(){
-    return (
-        <div className='mt-[rem] grid justify-center mb-[rem] bg-[#F3F3F3] pb-[3rem] pt-[5rem]'>
-            <h1 className='text-5xl mb-[2rem] text-center'>Create your account and keep<br/> 
-            your tasks up to date!</h1>
-            <a className='ml-[13rem] text-2xl text-[#323233] border-2 border-[#E0E0E0] rounded-3xl w-[13rem] h-[3rem] pt-[.5rem] text-center bg-white' href="Create Account">Create Account</a>
-            <a className='ml-[13rem] text-xl text-[#323233] w-[13rem] text-center mt-[1.5rem]' href="I already have an account">I already have an account</a>
-        </div>
-    )
+export function CreateAccount() {
+  return (
+    <div>
+      <div className="text-center md: bg-[#212121] py-20 md:py-[10rem]">
+        <h1 className="text-2xl md:text-4xl font-bold mb-8 md:mb-[2rem] text-white">
+          Create your account and keep
+          <br className="md:block" />
+          your tasks up to date!
+        </h1>
+        <button
+          className="text-lg md:text-xl text-white border-2 border-[#6BDD8F] rounded-md w-48 h-12 md:w-[13rem] md:h-[3rem] justify-center bg-[#6BDD8F]"
+          href="Create Account"
+        >
+          Create Account
+        </button>
+      </div>
+    </div>
+  );
 }
