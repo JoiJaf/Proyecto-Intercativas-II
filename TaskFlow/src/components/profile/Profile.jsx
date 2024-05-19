@@ -4,6 +4,7 @@ export function Profile() {
 
     return (
         <section>
+
             <div className="absolute bg-[#FCF8EC] w-full h-[760px] top-[400px] mb-[38px]"></div>
             <section className="relative">
                     <section className="w-full">
@@ -32,6 +33,7 @@ export function Profile() {
                                     <label htmlFor="carnet" className="clamp-md mb-1">Carnet</label>
                                     <input id="carnet" type="text" name="carnet" value="C13838" className="form-input w-full h-[85px] rounded-[20px] text-black clamp-lg p-4 border-[#EEEEEE] border-2" />
                                 </div>
+
 
                                 <div className="grid my-14">
                                     <label htmlFor="career" className="clamp-md mb-1">Career</label>

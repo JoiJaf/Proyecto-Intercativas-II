@@ -1,7 +1,7 @@
 import "../../index.css";
-import logoblanco from '../../assets/img/logo_v2.png';
 import playstore from '../../assets/img/google-play.png';
 import appstore from '../../assets/img/ios.png';
+import logo from '../../assets/img/logo-blanco.png';
 
 export function Footer() {
     return (
@@ -11,7 +11,7 @@ export function Footer() {
             <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-80vw gap-6 text-[#CCCCCC] form-grid-cols-2">
                 <section >
                     <div className="w-60 ml-12 sm:ml-12 mt-4 sm:mt-0">
-                        <a className="ml-12 " href="logo"><img class="max-w-full h-auto mb-4 pt-8  mb-logo-footer" src={logoblanco} /></a>
+                        <a className="ml-12 " href="logo"><img class="max-w-full h-auto mb-4 pt-8  mb-logo-footer" src={logo} /></a>
                         <h1 className="text-[#CCCCCC]">Download Our App</h1>
                         <div className="grid grid-cols-2 gap-4 ">
                             <div className="mb-footer-imgs"><img src={playstore} /></div>

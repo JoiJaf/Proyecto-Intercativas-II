@@ -58,9 +58,11 @@ export function Stadistics() {
                                 <strong className='md:text-[2vw] font-bold text-[#fff]'>{progress}%</strong>
                                 <p className='md:text-[1.2vw] font-bold text-[#fff] '>Your week <br /> porcentage</p>
 
+
                             </div>
                         </CircularProgressbarWithChildren>;
                     </div>
+
                 </div>
 
             </div>
