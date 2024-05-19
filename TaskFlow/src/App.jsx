@@ -23,10 +23,7 @@ export function App() {
 
   return (
     <div>
-      <Header />
       <Profile />
-      <Footer/>
-
     </div>
   );
 }

@@ -4,19 +4,19 @@ export function Profile() {
 
     return (
         <section>
-            <div className="absolute bg-[#FCF8EC] w-full h-[760px] top-[400px] mb-[38px]"></div>
+            <div className=" absolute bg-[#FCF8EC] h-[760px] top-[280px] mb-[38px] w-full max-md:h-[1480px]"></div>
             <section className="relative">
                     <section className="w-full">
                         <h2 className="mt-[38px] ml-[38px] clamp-xxl font-bold">Profile</h2> 
-                            <div className="grid grid-cols-3 gap-4 items-center">
-                                <div className="m-[38px]">
-                                    <img className="w-[426px] h-[418px] rounded-full" src="../src/assets/img/profile.png" alt="profile" />
+                            <div className="grid grid-cols-3 gap-4 items-center max-md:grid-cols-1">
+                                <div className="m-[38px] flex justify-center items-center">
+                                    <img className="w-[426px] h-[418px] rounded-full item-center" src="../src/assets/img/profile.png" alt="profile" />
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col max-md:items-center">
                                     <h1 className="mt-[38px] clamp-xxl font-bold">María Segura Umaña</h1>
                                     <p className="text-[#A7A7A7] clamp-md">mariaumasegur@example.com</p>
                                 </div>
-                                <div className="flex justify-center items-center p-4">
+                                <div className="flex justify-center items-center p-4 max-md:mb-[38px]">
                                     <input type="submit" value="Update" className="bg-[#212121] clamp-lg text-white py-4 px-4 rounded-[20px] w-[190px]" />
                                 </div>
                             </div>
@@ -85,8 +85,8 @@ export function Profile() {
                                 </div>
                             </div>
 
-                            <div className="flex justify-center items-center p-4">
-                                <input type="submit" value="Update Condition" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[20px] w-[598px]" />
+                            <div className="flex justify-center items-center p-4 max-md:px-0">
+                                <input type="submit" value="Update Condition" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[20px] w-[598px] max-md:w-full" />
                             </div>
                         </div>
                     </section>
