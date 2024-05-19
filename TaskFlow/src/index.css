@@ -206,9 +206,8 @@ html {
 
 .banner-myprogress {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 2.5rem;
-    width: 65rem;
+    
 }
 
 /* stadistics */

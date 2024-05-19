@@ -1,4 +1,7 @@
-import { Header } from "./components/basics/Header.jsx"
+
+
+import  {Header} from "./components/basics/Header.jsx"
+
 
 
 import { Welcome } from "./components/landing/Welcome.jsx";
@@ -8,7 +11,7 @@ import { VisualElements } from "./components/landing/VisualElements.jsx";
 import { Categories } from "./components/landing/Categories.jsx";
 import { CreateAccount } from "./components/landing/CreateAccount.jsx";
 import { Footer } from "./components/basics/Footer.jsx";
-import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx"
+import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx";
 
 import { Forms } from "./components/forms/Forms.jsx";
 
@@ -38,10 +41,11 @@ import { AddEvent } from "./components/windows/AddEvent.jsx";
 //Routes
 import {  Navigate, Route, Routes } from "react-router-dom";
 export function App() {
-
   return (
 
+
     <div className="bg-[#FCF8EC]">
+
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -56,9 +60,24 @@ export function App() {
 //COURSE
 //<Course/>
 
+//PROFILE
+//<Profile/>
+
 //DASHBOARD
-//<Task/>
-//<Stadistics/>
+//<Dashboard/>
+
+//SETTINGS
+//<Settings/>
+
+//WINDOWS
+//<AddEvent/>
+//<Notification/>
+
+//SCHEDULE
+//<InfoWeek/>
+//<TaskToday/>
+//<TaskCal/>
+// <Tasks/>
 
 //FORMS
 //<Forms/>
