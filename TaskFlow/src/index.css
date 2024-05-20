@@ -112,7 +112,7 @@ html {
     .form-mt-8 {
         margin-top: 1rem;
         /* Agrega espacio arriba en pantallas pequeñas */
-        margin-left: .65rem;
+        margin-left: .75rem;
         /* Agrega espacio a la izquierda en pantallas pequeñas */
         margin-right: .75rem;
         /* Agrega espacio a la derecha en pantallas pequeñas */
@@ -206,9 +206,8 @@ html {
 
 .banner-myprogress {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 2.5rem;
-    width: 65rem;
+    
 }
 
 /* stadistics */

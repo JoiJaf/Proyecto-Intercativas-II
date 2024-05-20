@@ -3,7 +3,10 @@ import "../../index.css";
 
 export function Task() {
     return (
-        <div className="mt-[8em]">
+
+        <div className="mt-[10vw]">
+            <h2 class="fs_xxl pt-10 pb-10 pl-[6rem]">My progress</h2>
+
 
             <section className="bg-[#212121] rounded-[5rem] p-20 banner mx-[4vw]">
                 <div className="content-end">
