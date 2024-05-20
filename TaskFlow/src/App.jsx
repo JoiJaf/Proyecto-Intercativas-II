@@ -32,7 +32,8 @@ import { Profile } from "./components/profile/Profile.jsx";
 //import {  } from "";
 
 import "./index.css";
-import { Settings } from "./components/settings/Settings.jsx";
+
+import { SettingsPage } from "./components/routes/SettingsPage.jsx"
 
 import { Notification } from "./components/windows/Notification.jsx";
 import { AddEvent } from "./components/windows/AddEvent.jsx";
@@ -44,12 +45,13 @@ export function App() {
   return (
 
 
-    <div className="bg-[#FCF8EC]">
+    <div>
 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
+        <Route path="/settingsPage" element={<SettingsPage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
       </Routes>
     </div>
