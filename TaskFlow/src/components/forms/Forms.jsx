@@ -10,7 +10,7 @@ export function Forms() {
 
     return (
         <section className='flex flex-col items-center justify-center my-14 form-mt-8'>
-            <div className='bg-white rounded-lg border border-[#979797] px-20 py-8 w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto'>
+            <div className='bg-white rounded-lg border border-[#979797] px-20 py-8 w-full sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto'>
                 <h1 className='clamp-xxl text-center '>{showLoginForm ? 'Login' : 'Sign in'}</h1>
                 {showLoginForm ? (
                     <LoginForm />

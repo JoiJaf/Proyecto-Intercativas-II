@@ -4,7 +4,7 @@ export function Course({ name, description, image }) {
     return (
 
 
-        <section className="bg-white rounded-lg border border-[#E0E0E0] w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto gap-4 mt-4 ">
+        <section className="bg-white rounded-lg border border-[#E0E0E0] w-full sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto gap-4 mt-4 ">
             <div>
                 <img className="w-full h-full rounded-t-lg" src={image} alt="#" />
             </div>
