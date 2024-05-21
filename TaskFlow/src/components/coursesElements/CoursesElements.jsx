@@ -70,6 +70,7 @@ export function CoursesElements() {
                                 <input type="checkbox" id="myCheckbox" className="custom-checkbox " />
                                
                             </div>
+                            
                             <div className="flex bg-gray-100 rounded-2xl p-4 w-full items-center">
                                 <img src={taskImg} alt="Task" />
                                 <div className="flex flex-col items-center justify-center flex-1">

@@ -34,7 +34,7 @@ export function Header() {
                 value={searchValue}
                 onChange={handleSearchChange}
                 placeholder="Buscar..."
-                className={` py-1 sm:py-2 lg:px-16 sm:w-full w-40 rounded-full border border-gray-400 focus:outline-none focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 ${isOpen && 'hidden lg:block'}`}
+                className={`  sm:py-2 lg:px-16 sm:w-full w-40 rounded-full border border-gray-400 focus:outline-none focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 ${isOpen && 'hidden lg:block'}`}
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
