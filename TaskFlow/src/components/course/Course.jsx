@@ -14,7 +14,7 @@ export function Course({ name, description, image }) {
                 </div>
                 <div className="mt-6">
                     <h3 className="clamp-md font-bold">Description</h3>
-                    <p className="clamp-md">{description}</p>
+                    <p className="clamp-md line-clamp-3">{description}</p>
                 </div>
                 <div className="flex items-center justify-center my-6">
                     <a className="text-center bg-[#6BDD8F] hover:bg-green-600 text-white py-4 px-4 rounded-2xl w-full" href="#">View More</a>

@@ -1,9 +1,8 @@
 import { Footer } from "../basics/Footer.jsx";
 import { CourseContainer } from "../course/CourseContainer.jsx";
 
-
 import { CoursesElements } from "../coursesElements/CoursesElements.jsx";
-import { Forms } from "../forms/Forms.jsx";
+
 
 export function CoursesPage() {
     const events = [
@@ -17,7 +16,6 @@ export function CoursesPage() {
     return (
         <>
             <CourseContainer items={events} />
-            <Forms/>
             <Footer/>
             
         </>
