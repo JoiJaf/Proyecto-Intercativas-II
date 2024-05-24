@@ -67,16 +67,16 @@ export function Today() {
     // Fecha y hora en tiempo real -----------------------
 
     return (
-        <div className='grid my-10'>
-            <div className="ml-[4vw] grid border-solid border-2 border-[#E0E0E0] w-[30vw] h-[15vw] p-[3vw] rounded-[3rem] bg-white">
-                <p className="fs_md font-semibold">Today is</p>
-                <p className="fs_xl font-semibold ">{week}</p>
-                <p className="fs_md font-semibold pb-[1vw]">{month} {date}, {year}</p>
-                <p className="mb-[2rem] fs_xl font-semibold text-right" id='time'></p>
+        <div className='grid md:my-10 md:mx-0 mx-[4vw]'>
+            <div className="md:ml-[4vw] grid border-solid border-2 border-[#E0E0E0] lg:w-[30vw] md:h-[15vw] h-[10rem] md:p-[3vw] px-[8vw] pb-[2rem] pt-[1rem] rounded-[3rem] bg-white">
+                <p className="md:text-[1rem] text-[.8rem] font-semibold">Today is</p>
+                <p className="md:text-[1.5rem] text-[1.2rem] font-semibold ">{week}</p>
+                <p className="md:text-[1rem] text-[.8rem] font-semibold pb-[1vw]">{month} {date}, {year}</p>
+                <p className=" md:text-[1.5rem] text-[1.5rem] font-semibold text-right" id='time'></p>
             </div>
 
-            <div className="ml-[4vw] mt-[2rem] border-2 rounded-[3rem] p-[2rem] w-[30vw] bg-white flex justify-center items-center">
-                <p className="fs_xl font-bold">I semester <br/> <span className='fs_xxl'>6th week</span></p>
+            <div className="md:ml-[4vw] mt-[2vw] border-2 rounded-[3rem] p-[2rem] lg:w-[30vw] bg-white flex justify-center items-center">
+                <p className="text-[1.5rem] font-bold">I semester <br /> <span className='text-[1.6rem]'>6th week</span></p>
             </div>
         </div>
     )

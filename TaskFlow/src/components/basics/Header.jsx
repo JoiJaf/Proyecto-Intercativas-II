@@ -128,7 +128,7 @@ export function Header() {
                 Courses
               </a>
 
-              <a href="#" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/settingsPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 py-2 px-6 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings w-6 h-6 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke="#CCCCCC"
@@ -197,7 +197,7 @@ export function Header() {
                 Courses
               </a>
 
-              <a href="#" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/settingsPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
