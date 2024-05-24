@@ -47,7 +47,7 @@ export function App() {
   return (
 
 
-    <div className="bg-[#FCF8EC]">
+    <div >
 
       <Header />
       <Routes>

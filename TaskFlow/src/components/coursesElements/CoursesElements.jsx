@@ -7,37 +7,37 @@ export function CoursesElements() {
     const tasks = [
         { 
             "id": 1, 
-            "image": "https://biblioteca.acropolis.org/wp-content/uploads/2019/07/Rosa-Mister_Lincoln.jpg",
-            "title": "UI/UX", 
-            "category": "Title", 
-            "estimatedTime": "Time"  
+            "image": "https://edifica.com.pe/blog/wp-content/uploads/2022/09/que-es-edificio-inteligente.jpg",
+            "title": "Task title", 
+            "description": "Task description", 
+            "date": "Time"  
         },
         { 
             "id": 2, 
-            "image": "https://biblioteca.acropolis.org/wp-content/uploads/2019/07/Rosa-Mister_Lincoln.jpg",
-            "title": "UI/UX", 
-            "category": "Title", 
-            "estimatedTime": "Time"  
+            "image": "https://edifica.com.pe/blog/wp-content/uploads/2022/09/que-es-edificio-inteligente.jpg",
+            "title": "Task title", 
+            "description": "Task description", 
+            "date": "Time"  
         },
         { 
             "id": 3, 
             "image": "https://biblioteca.acropolis.org/wp-content/uploads/2019/07/Rosa-Mister_Lincoln.jpg",
             "title": "UI/UX", 
-            "category": "Title", 
-            "estimatedTime": "Time"  
+            "description": "Title", 
+            "date": "Time"  
         },
         { 
             "id": 4, 
             "image": "https://biblioteca.acropolis.org/wp-content/uploads/2019/07/Rosa-Mister_Lincoln.jpg",
             "title": "UI/UX", 
-            "category": "Title", 
-            "estimatedTime": "Time"  
+            "description": "Title", 
+            "date": "Time"  
         },
         // Otros eventos...
     ];
 
     return (
-        <section className=" mt-8 mb-40">
+        <section className="  mt-8 mb-40">
             <h1 className="clamp-xxl font-bold px-8">TM5300- English Reading for Computer Science</h1>
             <div className="mt-4 grid grid-cols-[35%_60%] justify-center mb-10 px-4 py-4 gap-6 form-grid-cols-2 form-mt-8">
                 <section className="gap-15 border border-[#E0E0E0] rounded-[1rem] bg-[#0E0E0E] flex flex-col">
@@ -63,7 +63,7 @@ export function CoursesElements() {
                 </section>
                 <section className=" bg-[#FCF8EC] gap-15 border border-[#E0E0E0] rounded-[1rem] overflow-y-auto max-h-[600px] flex flex-col">
                     <div className="flex justify-start pl-4">
-                        <h1 className="clamp-xl font-bold text-gray-200">All the tasks</h1>
+                        <h1 className="clamp-xl font-bold text-[#0E0E0E]">All the tasks</h1>
                     </div>
                     <div className="grid p-[1rem] flex-1">
                         <TaskCourseContainer items={tasks} />

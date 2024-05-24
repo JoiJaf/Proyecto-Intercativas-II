@@ -12,8 +12,8 @@ export function TaskCourseContainer({ items }) {
                 {items.map(item => <TaskCourse
                     key={item.id}
                     title={item.title}
-                    category={item.category}
-                    estimatedTime={item.estimatedTime}
+                    description={item.description}
+                    date={item.date}
                     image={item.image} />)}
 
                 {/* Fin */}

@@ -1,17 +1,37 @@
 
 import "../../index.css";
+import PropTypes from 'prop-types'
 
-export function TaskCourse({ title, category, image, estimatedTime }) {
+export function TaskCourse({ title,  description, image, date }) {
     return (
-        <div className="border-4 bg-white  border-[#0E0E0E] flex gap-[2vw] items-center mb-[1rem] rounded-[1rem]">
-            <img className=" w-24 h-24 object-cover sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-[1rem_0_0_1rem]" src={image} alt="" />
-            <div className="fs_md">
-                <p className="text-[#0E0E0E] font-semibold text-lg sm:text-xl md:text-2xl">{title}</p>
-                <p className="text-[#0E0E0E]  text-base sm:text-lg md:text-xl">{category}</p>
-                <p className="text-[#0E0E0E] mt-4 font-light text-base sm:text-lg md:text-xl">{estimatedTime}</p>
+        <div className="bg-white md:p-[2vw] p-[1.4rem] border-2 rounded-[2rem] flex mx-[2vw] justify-between pr-[4rem]">
+            <div className="flex">
+                <img className="md:w-[12vw] w-[20vw] md:h-[8vw] h-[15vw]" src={image} alt="" />
+
+                <div className="ml-[10vw] md:mr-0  flex flex-col justify-center">
+                    <p className="md:text-[1.5rem] text-[1rem] font-semibold m-0">{title}</p>
+                    <p className="md:text-[1.3rem] text-[.8rem] mb-[1vw] m-0">{description}</p>
+                    <p className="md:text-[1rem] text-[.6rem] text-[#6E6E6E]">{date}</p>
+                </div>
             </div>
+            <input className="w-[3vw] ml-6" type="checkbox" value="" />
         </div>
 
     );
 }
 
+//set required props
+TaskCourse.propTypes = {
+    title: PropTypes.string.isRequired,
+   description: PropTypes.string.isRequired,
+   image: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired
+}
+
+//set default values for props
+TaskCourse.defaultProps = {
+    title: 'TaskCourse title',
+    description: 'TaskCourse description',
+    image: 'TaskCourse image',
+    date: 'TaskCourse date'
+}
