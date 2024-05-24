@@ -2,8 +2,16 @@
 import taskImg from '../../assets/img/task-image.png';
 import "../../index.css";
 import { TaskCourseContainer } from "./TaskCourseContainer";
+import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 export function CoursesElements() {
+    var progress = 70;
+    const value = progress;
+
+    <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} styles={{}} />;
+
     const tasks = [
         { 
             "id": 1, 
@@ -54,15 +62,23 @@ export function CoursesElements() {
                                 <h2 className="clamp-xxl font-bold text-[#CCCCCC]">2/10</h2>
                             </div>
                         </section>
-                        <div className="flex justify-center mt-20 mb-10">
-                            <div className="border-[.8rem] border-[#6BDD8F] p-[1rem] w-[8rem] rounded-[100%] ">
-                                <h2 className="clamp-xxl font-bold pt-[.8rem] text-[#CCCCCC]">100%</h2>
+                        <div className="flex justify-center mt-20 ">
+                        <div className='md:w-[15vw] w-[10rem] z-0 m-auto'>
+                        <CircularProgressbarWithChildren value={value}>
+
+                            <div style={{textAlign: 'center'}}>
+                                <strong className='md:text-[2vw] font-bold text-[#fff]'>{progress}%</strong>
+                                <p className='md:text-[1.2vw] font-bold text-[#fff] '>Your week <br /> porcentage</p>
+
+
                             </div>
+                        </CircularProgressbarWithChildren>;
+                    </div>
                         </div>
                     </div>
                 </section>
-                <section className=" bg-[#FCF8EC] gap-15 border border-[#E0E0E0] rounded-[1rem] overflow-y-auto max-h-[600px] flex flex-col">
-                    <div className="flex justify-start pl-4">
+                <section className=" bg-[#FCF8EC] gap-15 border border-[#E0E0E0] rounded-[1rem] overflow-y-auto max-h-[650px] flex flex-col">
+                    <div className="flex justify-start pl-4 mt-4">
                         <h1 className="clamp-xl font-bold text-[#0E0E0E]">All the tasks</h1>
                     </div>
                     <div className="grid p-[1rem] flex-1">
