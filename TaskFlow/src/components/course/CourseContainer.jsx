@@ -8,9 +8,9 @@ export function CourseContainer({ items }) {
     return (
         <>
                 <div className="mt-8 ml-4 sm:ml-10 gap-x-4 ">
-                    <h1 className=" clamp-xxl text-start sm:text-center mb-text">My courses</h1>
+                    <h1 className=" clamp-xxl text-start text-center-mb">My courses</h1>
                 </div>
-                <div className="grid grid-cols-3 gap-4 my-5 form-grid-cols-2 px-4">
+                <div className="grid grid-cols-3 gap-4 my-5 form-grid-cols-2 px-4 mb-40">
                     {items.map(item => <Course key={item.id}
                         name={item.name}
                         description={item.description}
