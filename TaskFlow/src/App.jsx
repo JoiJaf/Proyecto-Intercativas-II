@@ -18,6 +18,8 @@ import { Forms } from "./components/forms/Forms.jsx";
 import { Course } from "./components/course/Course.jsx";
 import { CoursesPage } from "./components/routes/CoursesPage.jsx"
 import { Home } from "./components/routes/Home.jsx";
+import { FormsPage } from "./components/routes/FormsPage.jsx";
+import { CoursesElementsPage } from "./components/routes/CourseElementsPage.jsx";
 
 //dashboard ---------
 import { Dashboard } from "./components/dashboard/Dashboard.jsx";
@@ -41,6 +43,7 @@ import { AddEvent } from "./components/windows/AddEvent.jsx";
 
 //Routes
 import {  Navigate, Route, Routes } from "react-router-dom";
+
 export function App() {
   return (
 
@@ -51,6 +54,8 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
+        <Route path="/formsPage" element={<FormsPage />} />
+        <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
         <Route path="/settingsPage" element={<SettingsPage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
       </Routes>
