@@ -16,7 +16,7 @@ export function Carousel() {
     };
 
     return (
-        <div className="flex gap-[2vw] cursor-pointer overflow-x-hidden w-full" ref={scrollRef}>
+        <div className="flex gap-[2vw] cursor-pointer overflow-x-hidden md:w-full" ref={scrollRef}>
             {tasks.map(task => (
                 <TaskCard
                     key={task.id}
@@ -27,6 +27,7 @@ export function Carousel() {
                     dueDate={task.dueDate}
                 />
             ))}
+
             <button
                 className="absolute top-1/2 transform -translate-y-1/2 left-100 bg-white bg-opacity-25 hover:bg-opacity-85 rounded-full p-4"
                 onClick={() => handleScroll('left')}
@@ -39,6 +40,8 @@ export function Carousel() {
             >
                 &gt;
             </button>
+
+
         </div>
     );
 }
