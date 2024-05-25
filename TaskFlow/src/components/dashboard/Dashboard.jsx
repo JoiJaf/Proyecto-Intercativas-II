@@ -10,7 +10,7 @@ export function Dashboard() {
 
     return (
         <div>
-           
+        
             <Task />
             <div className="md:flex bg-[#FCF8EC] mt-[2rem] pt-[2rem] pb-[4rem] ">
                 <Today />
@@ -18,7 +18,7 @@ export function Dashboard() {
             </div>
             <Stadistics />
             <Category />
-            <Footer />
+            
         </div>
     )
 }

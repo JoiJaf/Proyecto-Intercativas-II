@@ -10,7 +10,7 @@ export function Schedule() {
 
     return (
         <div>
-            <Header/>
+            
             <InfoWeek/>
             <TaskToday/>
             <div className="grid md:grid-cols-2 md:ml-[4vw]">

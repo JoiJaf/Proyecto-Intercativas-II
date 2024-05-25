@@ -68,7 +68,7 @@ export function Today() {
 
     return (
         <div className='grid md:my-10 md:mx-0 mx-[4vw]'>
-            <div className="md:ml-[4vw] grid border-solid border-2 border-[#E0E0E0] lg:w-[30vw] md:h-[15vw] h-[10rem] md:p-[3vw] px-[8vw] pb-[2rem] pt-[1rem] rounded-[3rem] bg-white">
+            <div className="md:ml-[4vw] grid border-solid border-2 border-[#E0E0E0] lg:w-[30vw] md:h-[15vw] h-[10rem] md:p-[3vw] px-[8vw] pb-[2rem] pt-[1rem] rounded-[3rem] bg-white hover:border-[#424242] hover:duration-[2s]">
                 <p className="md:text-[1rem] text-[.8rem] font-semibold">Today is</p>
                 <p className="md:text-[1.5rem] text-[1.2rem] font-semibold ">{week}</p>
                 <p className="md:text-[1rem] text-[.8rem] font-semibold pb-[1vw]">{month} {date}, {year}</p>

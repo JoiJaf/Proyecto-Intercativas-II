@@ -258,7 +258,7 @@ html {
 /* calendar ------------------------------------------------  */
 
 .react-calendar {
-    max-width: 100% !important;
+    width: 100% !important;
     background: white;
     border: 1px solid #a0a096;
     font-family: Arial, Helvetica, sans-serif;
@@ -329,7 +329,7 @@ html {
 }
 
 .react-calendar__month-view__weekdays__weekday {
-    padding: 1em;
+    padding: 1em !important;
 }
 
 .react-calendar__month-view__weekNumbers .react-calendar__tile {
@@ -422,6 +422,7 @@ html {
 .CircularProgressbar .CircularProgressbar-path {
     stroke: #6BDD8F !important;
 }
+/* circular progress ------------------------------------------*/
 
 
   .custom-checkbox {

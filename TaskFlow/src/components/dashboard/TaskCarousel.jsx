@@ -13,7 +13,7 @@ export function Task() {
                     <h3 class="md:text-[1vw] text-[2vw] text-white md:text-start text-center">This week you have <br />
                         <span className="pt-4 md:text-[2vw] text-[4vw] font-semibold md:text-start text-center">10 tasks</span> </h3>
                     <div className="flex md:justify-start justify-center">
-                        <button class="flex md:py-4 py-3 px-12 md:mt-[10vw] mt-[2rem] mb-[1.5rem] bg-[#6BDD8F] text-[#fff] md:text-[1vw] text-[3vw] items-center rounded-[1rem]">View all ~ </button>
+                        <button class="flex md:py-4 py-3 px-12 md:mt-[10vw] mt-[2rem] mb-[1.5rem] bg-[#6BDD8F] text-[#fff] md:text-[1vw] text-[3vw] items-center rounded-[1rem] hover:scale-[1.08] hover:duration-500 hover:bg-[#48ad68]">View all ~ </button>
                     </div>
                 </div>
                 <Carousel />

@@ -51,14 +51,15 @@ export function App() {
     <div>
 
       <Header />
-      <Routes>
+      <Schedule/>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
         <Route path="/formsPage" element={<FormsPage />} />
         <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
         <Route path="/settingsPage" element={<SettingsPage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
