@@ -47,7 +47,7 @@ export function Footer() {
                     </section>
                     {/* Sección de "Plan with Us" */}
                     <section className="grid items-center justify-center">
-                        <h3>Plan with Us</h3>
+                        <h3>Manage with Us</h3>
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a className="nav-bottom-link" href="#">Access</a></li>
@@ -60,7 +60,7 @@ export function Footer() {
                         <h3></h3>
                         <ul>
                             <li><a href="#">Your Account</a></li>
-                            <li><a href="#">Your Reservations</a></li>
+                            <li><a href="#">Your Tasks</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Help Center</a></li>
                             <li><a href="#">Submit Feedback</a></li>

@@ -17,7 +17,7 @@ export function CoursesElements() {
     // Define una constante 'value' igual al progreso
     const value = progress;
 
-    // Ejemplo de uso del componente CircularProgressbar, aunque este JSX no se está utilizando
+    // Ejemplo de uso del componente CircularProgressbar
     <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} styles={{}} />;
 
     // Array de tareas con información sobre cada tarea (id, imagen, título, descripción, fecha)
