@@ -1,10 +1,11 @@
 import { Footer } from "../basics/Footer.jsx";
+import { Dashboard } from "../dashboard/Dashboard.jsx";
 
 
 export function Home() {
     return (
         <>
-            <h1>Hola</h1>
+            <Dashboard/>
             <Footer />
         </>
     )

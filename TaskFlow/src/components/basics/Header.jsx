@@ -146,8 +146,8 @@ export function Header() {
             </div>
           </div>
 
-          <div className={`hidden lg:flex lg:items-center ml-4`}>
-            <div className="flex flex-col -mx-4 lg:flex-row lg:items-center lg:mx-6">
+          <div className={`hidden lg:flex lg:items-center `}>
+            <div className="flex flex-col mx-4 lg:flex-row lg:items-center lg:mx-6">
               <a href="/" class="flex items-center px-3 py-2 mx-3 mt-2 text-gray-200 hover:text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100 hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"

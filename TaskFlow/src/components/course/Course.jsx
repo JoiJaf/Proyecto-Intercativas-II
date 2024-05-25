@@ -1,4 +1,5 @@
 import "../../index.css";
+import PropTypes from 'prop-types'
 
 export function Course({ name, description, image }) {
     return (
@@ -25,4 +26,16 @@ export function Course({ name, description, image }) {
     );
 }
 
+//set required props
+Course.propTypes = {
+    title: PropTypes.string.isRequired,
+   description: PropTypes.string.isRequired,
+   image: PropTypes.string.isRequired,
+}
 
+//set default values for props
+Course.defaultProps = {
+    title: 'TaskCourse title',
+    description: 'TaskCourse description',
+    image: 'TaskCourse image',
+}
