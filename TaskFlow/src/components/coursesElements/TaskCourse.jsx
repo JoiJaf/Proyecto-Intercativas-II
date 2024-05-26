@@ -8,14 +8,14 @@ import PropTypes from 'prop-types';
 export function TaskCourse({ title, description, image, date }) {
     return (
         // Contenedor principal con estilos aplicados para el diseño del task
-        <div className="bg-white md:p-[2vw] p-[1.4rem] border-2 rounded-[2rem] flex mx-[2vw] justify-between pr-[4rem]">
+        <div className="bg-white md:p-[2vw] p-[1.4rem] border-2 rounded-[2rem] flex mx-[2vw] justify-between pr-[4rem] hover:scale-[0.98] hover:duration-700 hover:border-[#9d9d9d]">
             {/* Contenedor de imagen y detalles */}
             <div className="flex">
                 {/* Imagen de la tarea */}
                 <img className="md:w-[12vw] w-[20vw] md:h-[8vw] h-[15vw]" src={image} alt={title} />
                 
                 {/* Contenedor de detalles de la tarea */}
-                <div className="ml-[10vw] md:mr-0 flex flex-col justify-center">
+                <div className="ml-[10vw] md:mr-0  flex flex-col justify-center">
                     {/* Título de la tarea */}
                     <p className="md:text-[1.5rem] text-[1rem] font-semibold m-0">{title}</p>
                     {/* Descripción de la tarea */}
