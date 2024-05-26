@@ -1,3 +1,4 @@
+// Información de las tareas
 export const tasks = [
     { id: 1, bgColor: "bg-[#F0EC84]", number: "01", title: "Algorithm Design and Analysis Assignment", course: "Interactivas II", dueDate: "April 9 | 1:00pm" },
     { id: 2, bgColor: "bg-[#8D84F0]", number: "02", title: "Storyboard Creation", course: "Audio and Video Editing", dueDate: "April 11 | 1:00pm" },

@@ -1,6 +1,19 @@
+// Importa el modulo principal de react
 import React from 'react';
+// Importa el archivo CSS principal
 import "../../index.css";
 
+/**
+ * Renders a task card component with the given background color, task number, title, course, and due date.
+ *
+ * @param {Object} props - The properties object containing the following properties:
+ *   - {string} bgColor: The background color of the task card.
+ *   - {number} number: The task number.
+ *   - {string} title: The title of the task.
+ *   - {string} course: The course associated with the task.
+ *   - {string} dueDate: The due date of the task.
+ * @return {JSX.Element} The task card component.
+ */
 export function TaskCard({bgColor, number, title, course, dueDate}) {
     return (
         <div className={`${bgColor} p-[4vw] rounded-[3rem] grid hover:scale-[0.97] hover:duration-700 md:w-auto`}>
