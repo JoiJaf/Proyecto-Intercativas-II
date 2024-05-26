@@ -23,7 +23,7 @@ export function Course({ name, description, image }) {
                     <h3 className="clamp-md font-bold">Description</h3>
                     <p className="clamp-md line-clamp-3">{description}</p>
                 </div>
-                {/* Enlace para ver más detalles del curso */}
+                {/*  Boton para ver más detalles del curso */}
                 <div className="flex items-center justify-center my-6">
                     <button className="text-center bg-[#6BDD8F] hover:bg-green-600 text-white py-4 px-4 rounded-2xl w-full">View More</button>
                 </div>
