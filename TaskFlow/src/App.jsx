@@ -3,16 +3,6 @@
 import  {Header} from "./components/basics/Header.jsx"
 
 
-
-import { Welcome } from "./components/landing/Welcome.jsx";
-import { MyProgress } from "./components/landing/MyProgress.jsx";
-import { Stadisticslanding } from "./components/landing/Stadisticslanding.jsx";
-import { VisualElements } from "./components/landing/VisualElements.jsx";
-import { Categories } from "./components/landing/Categories.jsx";
-import { CreateAccount } from "./components/landing/CreateAccount.jsx";
-import { Footer } from "./components/basics/Footer.jsx";
-import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx";
-
 import { Forms } from "./components/forms/Forms.jsx";
 
 import { Course } from "./components/course/Course.jsx";
@@ -44,6 +34,9 @@ import { AddEvent } from "./components/windows/AddEvent.jsx";
 
 //Routes
 import {  Navigate, Route, Routes } from "react-router-dom";
+import { WelcomePage } from "./components/routes/WelcomePage.jsx";
+import { NotificationPage } from "./components/routes/NotificationPage.jsx";
+import { InformationCoursePage } from "./components/routes/InformationCoursePage.jsx";
 
 export function App() {
   return (
@@ -53,12 +46,22 @@ export function App() {
 
 
       <Header />
-      <Routes>
+
+      
+      { <Routes>
+        <Route path="/welcomePage" element={<WelcomePage />} />
+
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
         <Route path="/formsPage" element={<FormsPage />} />
         <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
         <Route path="/settingsPage" element={<SettingsPage />} />
+
+        <Route path="/notificationPage" element={<NotificationPage />} />
+        <Route path="/informationCoursePage" element={<InformationCoursePage />} />
+        <Route path="/*" element={ <Navigate to="/" />}/>
+      </Routes> }
+
         <Route path="/schedulePage" element={<SchedulePage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
       </Routes>
@@ -94,14 +97,9 @@ export function App() {
 //<Forms/>
 
 //WELCOME PAGE
-//<Header />
+
 //<Welcome />
-//<MyProgress />
-//<Stadisticslanding />
-//<VisualElements/>
-//<Categories/>
-//<CreateAccount/>
-//<Footer />
+
 //!!!!!!!!!!!!
 
 export default App;

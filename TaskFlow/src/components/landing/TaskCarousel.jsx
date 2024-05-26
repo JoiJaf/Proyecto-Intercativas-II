@@ -3,10 +3,21 @@ import "../../index.css";
 export function Task() {
   return (
     <div className="mt-32 md:mt-[8em]">
+      <div className="mb-16 flex justify-center items-center ">
+        <div className="w-full  md:w-1/2">
+          <p className="text-center text-4xl font-bold">
+            View all your pending tasks from your courses easily and quickly
+          </p>
+        </div>
+      </div>
       <section className="bg-[#212121] rounded-3xl p-6 md:rounded-[5rem] md:p-20 grid gap-8 mx-4 md:grid-cols-[1fr_2fr] md:gap-[4rem] md:mx-[4vw]">
         <div className="mb-8 md:mb-0">
-          <h2 className="text-lg mb-2 text-white font-bold md:">Pending jobs</h2>
-          <p className="text-xxl mb-4 text-white font-normal">Hello (usuario)</p>
+          <h2 className="text-lg mb-2 text-white font-bold md:">
+            Pending jobs
+          </h2>
+          <p className="text-xxl mb-4 text-white font-normal">
+            Hello (usuario)
+          </p>
           <h3 className="text-lg text-white mb-4">
             This week you have <br />
             <span className="text-xxl font-semibold">10 tasks</span>
@@ -33,7 +44,9 @@ export function Task() {
             <p className="text-lg font-normal mb-2 md:w-[8vw] md:mr-[3vw]">
               Storyboard Creation
             </p>
-            <p className="font-semibold mb-4 md:mb-[5vw]">Audio and Video Editing</p>
+            <p className="font-semibold mb-4 md:mb-[5vw]">
+              Audio and Video Editing
+            </p>
             <p className="text-[#2c2c2c] font-semibold text-md">
               April 11 | 1:00pm
             </p>
