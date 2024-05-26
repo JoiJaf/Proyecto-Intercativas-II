@@ -12,6 +12,15 @@ export function Stadistics() {
 
   return (
     <section className="bg-[#212121] pt-8 pb-16 md:pt-[2rem] md:pb-[4rem]">
+      <div className="mb-16 flex justify-center items-center ">
+        <div className="w-full  md:w-1/2">
+          <p className="text-center text-white md:text-3xl text-4xl font-bold">
+            Monitor the number of tasks you have and stay alert about your
+            progress with the traffic light indicator.
+          </p>
+        </div>
+      </div>
+
       <h2 className="text-xl text-center font-bold text-[#6BDD8F] pb-4 md:pb-[1rem]">
         Stadistics
       </h2>

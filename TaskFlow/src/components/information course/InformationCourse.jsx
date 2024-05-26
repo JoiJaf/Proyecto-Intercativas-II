@@ -5,10 +5,10 @@ export function InformationCourse() {
   return (
     <section className="py-12 bg-[#FCF8EC] bg-cover">
       <h2 className="text-xl font-bold ml-8 pb-2">3D Design Learning</h2>
-      <div className="border-4 border-white rounded-md max-w-[50rem] mx-auto bg-white">
+      <div className="border-4 border-white rounded-md max-w-[92rem] mx-auto bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-5 py-8">
-          <div className="flex justify-center md:justify-start">
-            <img className="w-full max-w-xs md:max-w-md" src={imageCourse} alt="Course" />
+          <div className="justify-center md:justify-start">
+            <img className="w-full max-w-xs ml-8 md:max-w-md" src={imageCourse} alt="Course" />
           </div>
           <div>
             <h2 className="text-xl pb-2 font-bold">Course Name</h2>

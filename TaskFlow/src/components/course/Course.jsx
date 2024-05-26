@@ -25,7 +25,7 @@ export function Course({ name, description, image }) {
                 </div>
                 {/* Enlace para ver más detalles del curso */}
                 <div className="flex items-center justify-center my-6">
-                    <a className="text-center bg-[#6BDD8F] hover:bg-green-600 text-white py-4 px-4 rounded-2xl w-full" href="#">View More</a>
+                    <a href='/informationCoursePage' className="text-center bg-[#6BDD8F] hover:bg-green-600 text-white py-4 px-4 rounded-2xl w-full">View More</a>
                 </div>
             </div>
         </section>
