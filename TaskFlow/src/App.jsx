@@ -51,6 +51,7 @@ export function App() {
 
     <div>
 
+
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -61,6 +62,7 @@ export function App() {
         <Route path="/schedulePage" element={<SchedulePage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
       </Routes>
+
     </div>
   );
 }
