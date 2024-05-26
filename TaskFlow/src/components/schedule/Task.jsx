@@ -4,7 +4,7 @@ import "../../index.css";
 export function Tasks() {
 
     return (
-        <div className="mt-[1vw] mb-[2rem] mr-[4vw] md:ml-0 ml-[4vw] bg-[#212121] p-[2rem] rounded-[2rem]">
+        <div className="mt-[1vw] mb-[2rem] mr-[4vw] md:ml-0 ml-[4vw] bg-[#212121] p-[2rem] rounded-[2rem] md:w-auto w-[40v]">
             <h3 className="md:text-[1.2vw] text-[#fff] pb-[1rem] font-semibold">Tasks</h3>
 
             <div className="grid">

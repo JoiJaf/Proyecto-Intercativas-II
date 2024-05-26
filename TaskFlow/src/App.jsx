@@ -26,6 +26,7 @@ import { Profile } from "./components/profile/Profile.jsx";
 import "./index.css";
 
 import { SettingsPage } from "./components/routes/SettingsPage.jsx"
+import { SchedulePage } from "./components/routes/SchedulePage.jsx"
 
 import { Notification } from "./components/windows/Notification.jsx";
 import { AddEvent } from "./components/windows/AddEvent.jsx";
@@ -43,19 +44,28 @@ export function App() {
 
     <div>
 
+
       <Header />
+
       
       { <Routes>
         <Route path="/welcomePage" element={<WelcomePage />} />
+
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
         <Route path="/formsPage" element={<FormsPage />} />
         <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
         <Route path="/settingsPage" element={<SettingsPage />} />
+
         <Route path="/notificationPage" element={<NotificationPage />} />
         <Route path="/informationCoursePage" element={<InformationCoursePage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
       </Routes> }
+
+        <Route path="/schedulePage" element={<SchedulePage />} />
+        <Route path="/*" element={ <Navigate to="/" />}/>
+      </Routes>
+
     </div>
   );
 }
