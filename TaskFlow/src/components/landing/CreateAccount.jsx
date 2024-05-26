@@ -9,12 +9,12 @@ export function CreateAccount() {
           <br className="md:block" />
           your tasks up to date!
         </h1>
-        <button
-          className="text-lg md:text-xl text-white border-2 border-[#6BDD8F] rounded-md w-48 h-12 md:w-[13rem] md:h-[3rem] justify-center bg-[#6BDD8F]"
-          href="Create Account"
+        <a
+          className="text-lg md:text-xl text-white border-2 border-[#6BDD8F] rounded-md w-48 h-12 px-8 py-4 md:w-[13rem] md:h-[3rem] justify-center bg-[#6BDD8F]"
+          href="/formsPage"
         >
           Create Account
-        </button>
+        </a>
       </div>
     </div>
   );
