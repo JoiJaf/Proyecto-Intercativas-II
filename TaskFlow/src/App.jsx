@@ -36,6 +36,7 @@ import { Profile } from "./components/profile/Profile.jsx";
 import "./index.css";
 
 import { SettingsPage } from "./components/routes/SettingsPage.jsx"
+import { SchedulePage } from "./components/routes/SchedulePage.jsx"
 
 import { Notification } from "./components/windows/Notification.jsx";
 import { AddEvent } from "./components/windows/AddEvent.jsx";
@@ -51,15 +52,15 @@ export function App() {
     <div>
 
       <Header />
-      <Schedule/>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coursesPage" element={<CoursesPage />} />
         <Route path="/formsPage" element={<FormsPage />} />
         <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
         <Route path="/settingsPage" element={<SettingsPage />} />
+        <Route path="/schedulePage" element={<SchedulePage />} />
         <Route path="/*" element={ <Navigate to="/" />}/>
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

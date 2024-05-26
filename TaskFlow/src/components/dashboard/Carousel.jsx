@@ -16,7 +16,7 @@ export function Carousel() {
     };
 
     return (
-        <div className="flex gap-[2vw] cursor-pointer overflow-x-hidden md:w-full" ref={scrollRef}>
+        <div className="flex overflow-y-hidden p-[2rem] gap-[2vw] cursor-pointer overflow-x-hidden w-full" ref={scrollRef}>
             {tasks.map(task => (
                 <TaskCard
                     key={task.id}
