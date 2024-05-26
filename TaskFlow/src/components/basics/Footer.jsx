@@ -1,36 +1,75 @@
+// Importa el archivo CSS principal para estilos globales
 import "../../index.css";
-import logoblanco from '../../assets/img/logo_v2.png';
+
+// Importa imágenes necesarias para el footer
 import playstore from '../../assets/img/google-play.png';
 import appstore from '../../assets/img/ios.png';
+import logo from '../../assets/img/logo-blanco.png';
 
-export function Footer(){
+// Define el componente funcional Footer
+export function Footer() {
     return (
-        <section className="bg-[#0E0E0E] pb-[3rem]">
-            <a className="ml-[3rem]" href="logo"><img class="w-full h-full max-w-[12vw] ml-[3rem] mb-[1rem] pt-[2rem]" src={logoblanco} /></a>
-            <div className="w-[15rem] ml-[3rem]">
-                <h1 className="text-white">Download Our App</h1>
-                <div className="grid grid-cols-[10%_10%] gap-[1rem] w-[50rem] ">
-                    <div><img class="w-full h-full max-w-[12rem]" src={playstore} /></div>
-                    <div><img class="w-full h-full max-w-[12rem]" src={appstore} /></div>
+        // Contenedor principal del footer con clases de estilo
+        <footer className="footer-container bg-[#0E0E0E]">
+            {/* Div contenedor con una grid responsive */}
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-80vw gap-6 text-[#CCCCCC] form-grid-cols-2">
+                {/* Sección del logo y enlaces de descarga */}
+                <section>
+                    <div className="w-60 ml-12 sm:ml-12 mt-4 sm:mt-0">
+                        {/* Enlace al logo */}
+                        <a className="ml-12" href="logo">
+                            {/* Imagen del logo */}
+                            <img className="max-w-full h-auto mb-4 pt-8 mb-logo-footer" src={logo} />
+                        </a>
+                        {/* Título para la sección de descarga de la app */}
+                        <h1 className="text-[#CCCCCC]">Download Our App</h1>
+                        {/* Grid para las imágenes de Play Store y App Store */}
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="mb-footer-imgs">
+                                <img src={playstore} alt="Google Play Store" />
+                            </div>
+                            <div className="mb-footer-imgs">
+                                <img src={appstore} alt="Apple App Store" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Div para las secciones de enlaces */}
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 py-14">
+                    {/* Sección de "Get to Know Us" */}
+                    <section className="grid items-center justify-center">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Discover</a></li>
+                        </ul>
+                    </section>
+                    {/* Sección de "Plan with Us" */}
+                    <section className="grid items-center justify-center">
+                        <h3>Manage with Us</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a className="nav-bottom-link" href="#">Access</a></li>
+                            <li><a className="nav-bottom-link" href="#">Manage</a></li>
+                            <li><a className="nav-bottom-link" href="#">Categories</a></li>
+                        </ul>
+                    </section>
+                    {/* Sección de "Your Account" */}
+                    <section className="grid items-center justify-center">
+                        <h3></h3>
+                        <ul>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Tasks</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Submit Feedback</a></li>
+                        </ul>
+                    </section>
                 </div>
             </div>
-            <div className="w-[15rem] ml-[20rem] mt-[-3rem]">
-                <h1 className="text-center text-white">Links</h1>
-                <div className="grid grid-cols-[10%_10%_10%] gap-[1rem] w-[50rem] ">
-                    <div className="border-r-[.2rem] border-white text-white" >
-                        <a href="Home">Home</a>
-                    </div>
-                    <div className="border-r-[.2rem] border-white text-white">
-                        <a href="About Us">About Us</a>
-                    </div>
-                    <div className=" text-white" >
-                        <a href="Contact">Contact</a>
-                    </div>
-                </div>
-
-            </div>
-            <h1 className="text-white ml-[75rem]">Todos los derechos reservados</h1>
-        </section>
-
+            {/* Texto de derechos reservados */}
+            <p className="text-center text-[#CCCCCC] py-10"> @All rights reserved</p>
+        </footer>
     )
 }

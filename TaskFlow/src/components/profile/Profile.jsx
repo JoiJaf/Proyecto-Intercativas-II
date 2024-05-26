@@ -5,6 +5,7 @@ import { HealthCondition } from "./HealthCondition";
 
 export function Profile() {
 
+
   return (
     <section className="grid absolute lg:w-full">
       <section className="absolute bg-[#FCF8EC] h-[960px] top-[130px] mb-[38px] w-full max-md:h-[1500px]"></section>
@@ -20,6 +21,7 @@ export function Profile() {
           <HealthCondition />
         </form>
       </section>
+
     </section>
   )
 }

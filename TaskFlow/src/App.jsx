@@ -1,6 +1,9 @@
 
-import { Header } from "./components/basics/Header.jsx";
-import { Task } from "./components/dashboard/TaskCarousel.jsx";
+
+import  {Header} from "./components/basics/Header.jsx"
+
+
+
 import { Welcome } from "./components/landing/Welcome.jsx";
 import { MyProgress } from "./components/landing/MyProgress.jsx";
 import { Stadisticslanding } from "./components/landing/Stadisticslanding.jsx";
@@ -8,10 +11,23 @@ import { VisualElements } from "./components/landing/VisualElements.jsx";
 import { Categories } from "./components/landing/Categories.jsx";
 import { CreateAccount } from "./components/landing/CreateAccount.jsx";
 import { Footer } from "./components/basics/Footer.jsx";
+import { CoursesElements } from "./components/coursesElements/CoursesElements.jsx";
 
 import { Forms } from "./components/forms/Forms.jsx";
 
 import { Course } from "./components/course/Course.jsx";
+import { CoursesPage } from "./components/routes/CoursesPage.jsx"
+import { Home } from "./components/routes/Home.jsx";
+import { FormsPage } from "./components/routes/FormsPage.jsx";
+import { CoursesElementsPage } from "./components/routes/CourseElementsPage.jsx";
+
+//dashboard ---------
+import { Dashboard } from "./components/dashboard/Dashboard.jsx";
+//dashboard ---------
+
+// schedule ----------
+import { Schedule } from "./components/schedule/Schedule.jsx";
+// schedule ----------
 
 import { Profile } from "./components/profile/Profile.jsx";
 
@@ -19,31 +35,73 @@ import { Profile } from "./components/profile/Profile.jsx";
 
 import "./index.css";
 
-export function App() {
+import { SettingsPage } from "./components/routes/SettingsPage.jsx"
+import { SchedulePage } from "./components/routes/SchedulePage.jsx"
 
+import { Notification } from "./components/windows/Notification.jsx";
+import { AddEvent } from "./components/windows/AddEvent.jsx";
+// windows ---
+
+//Routes
+import {  Navigate, Route, Routes } from "react-router-dom";
+
+export function App() {
   return (
+
+
     <div>
-      <Profile />
+
+
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coursesPage" element={<CoursesPage />} />
+        <Route path="/formsPage" element={<FormsPage />} />
+        <Route path="/coursesElementsPage" element={<CoursesElementsPage />} />
+        <Route path="/settingsPage" element={<SettingsPage />} />
+        <Route path="/schedulePage" element={<SchedulePage />} />
+        <Route path="/*" element={ <Navigate to="/" />}/>
+      </Routes>
+
     </div>
   );
 }
 
+//<Route path="/*" element={ <Navigate to="/" />}
 //COURSE
 //<Course/>
 
+//PROFILE
+//<Profile/>
+
 //DASHBOARD
-//<Task/>
+//<Dashboard/>
+
+//SETTINGS
+//<Settings/>
+
+//WINDOWS
+//<AddEvent/>
+//<Notification/>
+
+//SCHEDULE
+//<InfoWeek/>
+//<TaskToday/>
+//<TaskCal/>
+// <Tasks/>
 
 //FORMS
 //<Forms/>
 
 //WELCOME PAGE
+//<Header />
 //<Welcome />
 //<MyProgress />
 //<Stadisticslanding />
 //<VisualElements/>
 //<Categories/>
 //<CreateAccount/>
+//<Footer />
 //!!!!!!!!!!!!
 
 export default App;
