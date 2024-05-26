@@ -28,12 +28,12 @@ export function InformationCourse() {
           </div>
         </div>
         <div className="mb-8 text-center">
-          <button
+          <a
             className="bg-[#6BDD8F] hover:bg-[#0E0E0E] text-lg md:text-2xl text-white px-6 md:px-12 py-2 md:py-2 rounded-lg"
-            href="View Tasks"
+            href="/schedulePage"
           >
             View Tasks
-          </button>
+          </a>
         </div>
       </div>
     </section>
