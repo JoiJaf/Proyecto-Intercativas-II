@@ -23,12 +23,12 @@ function PasswordForm() {
     return (
         <form method="post" action="#">
             <div className="grid grid-cols-2 p-8 max-md:grid-cols-1">
-                {/* Componente para el campo de entrada para la contraseña */}
+                {/* Contenedor para el campo de entrada para la contraseña */}
                 <div className="flex my-14">
                     <label htmlFor="password" className="mb-1 clamp-md"></label>
                     <input id="password" type="password" name="password" className="form-input w-full h-[56px] rounded-[20px] text-black clamp-lg p-4" />
                 </div>
-                {/* Componente del botón de envío del formulario */}
+                {/* Contenedor del botón de envío del formulario */}
                 <div className="flex justify-end max-md:justify-center items-center p-4">
                     <input type="submit" value="Accept" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[20px] w-[190px]" />
                 </div>
