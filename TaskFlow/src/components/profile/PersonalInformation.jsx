@@ -12,7 +12,7 @@ function InputField({ label, id, name, value, type = "text" }) {
   return (
     <div className="grid my-14">
       <label htmlFor={id} className="clamp-md mb-1">{label}</label>
-      <input id={id} type={type} name={name} value={value} className="form-input w-full h-[85px] rounded-[20px] text-black clamp-lg p-4 border-[#EEEEEE] border-2" />
+      <input id={id} type={type} name={name} value={value} className="form-input w-full h-[5.313rem] rounded-[1.25rem] text-black clamp-lg p-4 border-[#EEEEEE] border-2" />
     </div>
   );
 }
@@ -22,7 +22,7 @@ export function PersonalInformation() {
     
     return (
         // Contenedor principal con estilos para el formulario de información personal
-        <section className="mb-[38px] mx-[38px]">
+        <section className="mb-[2.375rem] mx-[2.375rem]">
           <div className="grid grid-cols-2 gap-8 text-[#A7A7A7] max-md:grid-cols-1">
             {/* Contenedor para los campos de entrada para el carnet y la carrera */} 
             <div>

@@ -21,7 +21,7 @@ function HealthInfoInput({ label, id, type, name, value }) {
 export function HealthCondition() {
   return (
     // Contenedor principal del formulario de información de salud
-    <div className="bg-[#212121] mt-[38px] p-[38px] rounded-[20px]">
+    <div className="bg-[#212121] mt-[2.375rem] p-[2.375rem] rounded-[1.25rem]">
       <h3 className="clamp-xl font-medium text-[#6BDD8F]">Health Condition</h3>
       <div className="grid grid-cols-2 gap-8 text-white max-md:grid-cols-1">
         {/* Contenedor para los campos de entrada para la edad y las horas de sueño */} 
@@ -37,7 +37,7 @@ export function HealthCondition() {
       </div>
       {/* Contenedor del botón de envío del formulario */}
       <div className="flex justify-center items-center p-4 max-md:px-0">
-        <input type="submit" value="Update Condition" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[20px] w-[598px] max-md:w-full" />
+        <input type="submit" value="Update Condition" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[1.25rem] w-[37.375rem] max-md:w-full" />
       </div>
     </div>
   );

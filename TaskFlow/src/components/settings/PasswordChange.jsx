@@ -26,11 +26,11 @@ function PasswordForm() {
                 {/* Contenedor para el campo de entrada para la contraseña */}
                 <div className="flex my-14">
                     <label htmlFor="password" className="mb-1 clamp-md"></label>
-                    <input id="password" type="password" name="password" className="form-input w-full h-[56px] rounded-[20px] text-black clamp-lg p-4" />
+                    <input id="password" type="password" name="password" placeholder="New Password" className="form-input w-full h-[3.5rem] rounded-[1.25rem] text-black clamp-lg p-4" />
                 </div>
                 {/* Contenedor del botón de envío del formulario */}
                 <div className="flex justify-end max-md:justify-center items-center p-4">
-                    <input type="submit" value="Accept" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[20px] w-[190px]" />
+                    <input type="submit" value="Accept" className="bg-[#6BDD8F] clamp-lg text-white py-4 px-4 rounded-[1.25rem] w-[11.875rem]" />
                 </div>
 
             </div>
@@ -42,7 +42,7 @@ function PasswordForm() {
 export function PasswordChange() {
     return (
         // Componente principal con estilos para la sección de cambio de contraseña
-        <div className="bg-[#212121] w-full h-[272px] max-md:h-[600px] rounded-[40px]">
+        <div className="bg-[#212121] w-full h-[17rem] max-md:h-[37.5rem] rounded-[2.5rem]">
             {/* Renderiza los componentes Guidelines y PasswordForm*/}
             <div className="grid grid-cols-2 p-8 max-md:grid-cols-1">
                 <Guidelines />

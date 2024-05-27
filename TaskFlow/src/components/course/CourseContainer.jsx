@@ -10,7 +10,7 @@ export function CourseContainer({ items }) {
         <>
             {/* Título */}
             <div className="mt-8 ml-4 sm:ml-10 gap-x-4">
-                <h1 className="clamp-xxl text-start text-center-mb">My courses</h1>
+                <h1 className="clamp-xxl font-bold text-start text-center-mb">My courses</h1>
             </div>
             {/* Contenedor de cursos con diseño de cuadrícula */}
             <div className="grid grid-cols-3 gap-4 my-5 form-grid-cols-2 px-4 mb-40">

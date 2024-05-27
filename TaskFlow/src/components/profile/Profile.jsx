@@ -10,12 +10,12 @@ export function Profile() {
   return (
     // Contenedor principal con estilos para el componente perfil
     <section className="grid relative lg:w-full mb-[2.37rem]">
-      <section className="absolute bg-[#FCF8EC] h-[54rem] top-[16rem] mb-[2.37rem] w-full max-md:h-[1500px]"></section>
+      <section className="absolute bg-[#FCF8EC] h-[54rem] top-[16rem] mb-[2.37rem] w-full max-md:h-[93.75rem]"></section>
       <h2 className="mt-[2.37rem] ml-[2.37rem] clamp-xxl font-bold">Profile</h2>
       {/* Formulario para cambiar información de perfil */}
       <form method="post" action="#">
       {/* Renderiza ProfileHeader, seccion principal de perfil */}
-      <section className="relative flex items-center justify-center m-[18px]">
+      <section className="relative flex items-center justify-center m-[1.125rem]">
         <ProfileHeader />
       </section>
 

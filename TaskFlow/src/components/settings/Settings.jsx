@@ -14,9 +14,9 @@ export function Settings() {
         // Contenedor principal con estilos para el sistema de configuración
         <section className='grid justify-center items-center'>
             <section className='mx-4 mb-0'>
-                <h2 className="my-[38px] ml-[30px] clamp-xxl font-bold">Settings</h2> 
+                <h2 className="my-[2.375rem] ml-[1.875rem] clamp-xxl font-bold">Settings</h2> 
                     {/* Renderiza Notification y PasswordChange, secciones principal de configuración */}
-                    <div className="grid text-white gap-[38px]">
+                    <div className="grid text-white gap-[2.375rem]">
                         <Notification />
                         <PasswordChange />
                     </div>  
