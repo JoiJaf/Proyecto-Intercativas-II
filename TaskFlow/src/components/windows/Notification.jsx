@@ -1,6 +1,14 @@
+// Importa los estilos globales y la imagen del usuario.
 import "../../index.css";
 import user from "../../assets/img/user.png";
 
+/**
+ * Componente Notification
+ * 
+ * Este componente muestra una sección de notificaciones con mensajes de usuarios y otras alertas.
+ * Incluye una cabecera, una lista de notificaciones y un botón para marcar todas las notificaciones como leídas.
+ * 
+ */
 export function Notification() {
   return (
     <section className="w-full max-w-[35rem] mt-24 rounded-lg mx-auto px-4 mb-12">
@@ -17,6 +25,7 @@ export function Notification() {
       </div>
 
       <section className="mt-8 space-y-4">
+        {/* Notificación 1 */}
         <div className="flex items-start space-x-4">
           <img className="w-12 h-12 rounded-lg" src={user} alt="user" />
           <div className="flex-1 bg-[#D9D9D9] p-4 rounded-lg">
@@ -29,6 +38,7 @@ export function Notification() {
           </div>
         </div>
 
+        {/* Notificación 2 */}
         <div className="flex items-start space-x-4">
           <img className="w-12 h-12 rounded-lg" src={user} alt="user" />
           <div className="flex-1 bg-[#D9D9D9] p-4 rounded-lg">
@@ -41,6 +51,7 @@ export function Notification() {
           </div>
         </div>
 
+        {/* Notificación de una nueva tarea */}
         <div className="flex items-start space-x-4">
           <img className="w-12 h-12 rounded-lg" src={user} alt="user" />
           <div className="flex-1 bg-[#D9D9D9] p-4 rounded-lg">
@@ -52,6 +63,7 @@ export function Notification() {
           </div>
         </div>
 
+        {/* Notificación de la universidad */}
         <div className="flex items-start space-x-4">
           <img className="w-12 h-12 rounded-lg" src={user} alt="user" />
           <div className="flex-1 bg-[#D9D9D9] p-4 rounded-lg">
