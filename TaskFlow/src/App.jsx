@@ -18,39 +18,19 @@ import { WelcomePage } from "./components/routes/WelcomePage.jsx";
 import { NotificationPage } from "./components/routes/NotificationPage.jsx";
 import { InformationCoursePage } from "./components/routes/InformationCoursePage.jsx";
 import { ProfilePage } from "./components/routes/ProfilePage.jsx";
+import { Forms } from "./components/forms/Forms.jsx";
 
 export function App() {
   return (
     <div>
-      <Header />
 
-      {
+        <Header />
         <Routes>
-          <Route path="/welcomePage" element={<WelcomePage />} />
-
-          <Route path="/" element={<Home />} />
-          <Route path="/coursesPage" element={<CoursesPage />} />
-          <Route path="/formsPage" element={<FormsPage />} />
-          <Route
-            path="/coursesElementsPage"
-            element={<CoursesElementsPage />}
-          />
-          <Route path="/settingsPage" element={<SettingsPage />} />
-
-          <Route path="/notificationPage" element={<NotificationPage />} />
-          <Route
-            path="/informationCoursePage"
-            element={<InformationCoursePage />}
-          />
-          <Route path="/*" element={<Navigate to="/" />} />
-
-          <Route path="/schedulePage" element={<SchedulePage />} />
-
-          <Route path="/profilePage" element={<ProfilePage />} />
-
-          <Route path="/*" element={<Navigate to="/" />} />
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/home" element={<Home />} /> 
+          <Route path="/FormsPage" element={<Forms />} />
         </Routes>
-      }
+      
     </div>
   );
 }
