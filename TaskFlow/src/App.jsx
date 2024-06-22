@@ -24,12 +24,36 @@ export function App() {
   return (
     <div>
 
-        <Header />
+<div>
+      <Header />
+      {
         <Routes>
           <Route path="/" element={<WelcomePage />} />
-          <Route path="/home" element={<Home />} /> 
-          <Route path="/FormsPage" element={<Forms />} />
+
+          <Route path="/home" element={<Home />} />
+          <Route path="/coursesPage" element={<CoursesPage />} />
+          <Route path="/formsPage" element={<Forms />} />
+          <Route
+            path="/coursesElementsPage"
+            element={<CoursesElementsPage />}
+          />
+          <Route path="/settingsPage" element={<SettingsPage />} />
+
+          <Route path="/notificationPage" element={<NotificationPage />} />
+          <Route
+            path="/informationCoursePage"
+            element={<InformationCoursePage />}
+          />
+          <Route path="/*" element={<Navigate to="/" />} />
+
+          <Route path="/schedulePage" element={<SchedulePage />} />
+
+          <Route path="/profilePage" element={<ProfilePage />} />
+
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
+      }
+    </div>
       
     </div>
   );
