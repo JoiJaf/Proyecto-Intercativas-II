@@ -41,10 +41,14 @@ export function LoginForm() {
           const jsonData = JSON.stringify(response.data)
           const parseData = JSON.parse(jsonData);
           const datosUsuario = parseData.usuario;
-          console.log(datosUsuario);
+          localStorage.setItem("auth", JSON.stringify(datosUsuario));
+          console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario); 
 
           //Obtener el ID del usuario
-          const userID = datosUsuario.id;
+          const authData = localStorage.getItem("auth");
+          const parsedAuthData = JSON.parse(authData);
+          const userID = parsedAuthData.id;
+
           console.log('usuario:' + userID);
 
           // Redireccionar al usuario a home después de un breve tiempo

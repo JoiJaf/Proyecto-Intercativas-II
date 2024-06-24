@@ -35,12 +35,26 @@ export function SignInForm() {
               'Content-Type': 'application/json'
             }
           });
-          // Respuesta de Laravel en la consola
-          console.log(response.data); 
+           // Respuesta de Laravel en la consola
+           console.log(response.data); 
+
+           //Obtener datos de la respuesta
+           const jsonData = JSON.stringify(response.data)
+           const parseData = JSON.parse(jsonData);
+           const datosUsuario = parseData.usuario;
+           localStorage.setItem("auth", JSON.stringify(datosUsuario));
+           console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario); 
+ 
+           //Obtener el ID del usuario
+           const authData = localStorage.getItem("auth");
+           const parsedAuthData = JSON.parse(authData);
+           const userID = parsedAuthData.user_specific_id;           ;
+ 
+           console.log('usuario:' + userID);
     
           // Redireccionar al usuario a home después de un breve tiempo
           setTimeout(() => {
-            navigate('/home');  
+            navigate('/home/' + userID);   
           }, 1000); 
 
         } catch (error) {
