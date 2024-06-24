@@ -36,10 +36,20 @@ export function LoginForm() {
           });
           // Respuesta de Laravel en la consola
           console.log(response.data); 
-    
+
+          //Obtener datos de la respuesta
+          const jsonData = JSON.stringify(response.data)
+          const parseData = JSON.parse(jsonData);
+          const datosUsuario = parseData.usuario;
+          console.log(datosUsuario);
+
+          //Obtener el ID del usuario
+          const userID = datosUsuario.id;
+          console.log('usuario:' + userID);
+
           // Redireccionar al usuario a home después de un breve tiempo
           setTimeout(() => {
-            navigate('/home');  
+            navigate('/home/' + userID);  
           }, 1000); 
 
         } catch (error) {
