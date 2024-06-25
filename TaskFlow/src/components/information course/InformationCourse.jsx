@@ -9,18 +9,17 @@ import imageCourse from "../../assets/img/InformationCourse.svg";
  * Incluye detalles como el nombre del curso, el modo, el aula, el profesor, el horario de clases
  * y una breve descripción del curso. Además, proporciona un enlace para ver las tareas relacionadas con el curso.
  * 
- * 
  */
 export function InformationCourse() {
   return (
-    <section className="py-12 bg-[#FCF8EC] bg-cover">
+    <section className="py-12 bg-[#FCF8EC]  bg-cover">
       {/* Título principal de la sección */}
       <h2 className="text-xl font-bold ml-8 pb-2">3D Design Learning</h2>
       <div className="border-4 border-white rounded-md max-w-[92rem] mx-auto bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-5 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 py-8">
           {/* Contenedor para la imagen del curso */}
-          <div className="justify-center md:justify-start">
-            <img className="w-full max-w-xs ml-8 md:max-w-md" src={imageCourse} alt="Course" />
+          <div className="flex justify-center lg:justify-start">
+            <img className="w-full max-w-xs lg:max-w-xl lg:mx-auto " src={imageCourse} alt="Course" />
           </div>
           {/* Contenedor para la información detallada del curso */}
           <div>
@@ -43,7 +42,7 @@ export function InformationCourse() {
         {/* Botón para ver las tareas del curso */}
         <div className="mb-8 text-center">
           <a
-            className="bg-[#6BDD8F] hover:bg-[#0E0E0E] text-lg md:text-2xl text-white px-6 md:px-12 py-2 md:py-2 rounded-lg"
+            className="bg-[#6BDD8F] hover:bg-[#0E0E0E] text-lg lg:text-2xl text-white px-6 lg:px-12 py-2 lg:py-2 rounded-lg"
             href="/schedulePage"
           >
             View Tasks

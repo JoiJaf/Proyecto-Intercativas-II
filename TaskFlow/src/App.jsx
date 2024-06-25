@@ -18,19 +18,21 @@ import { WelcomePage } from "./components/routes/WelcomePage.jsx";
 import { NotificationPage } from "./components/routes/NotificationPage.jsx";
 import { InformationCoursePage } from "./components/routes/InformationCoursePage.jsx";
 import { ProfilePage } from "./components/routes/ProfilePage.jsx";
+import { Forms } from "./components/forms/Forms.jsx";
 
 export function App() {
   return (
     <div>
-      <Header />
 
+<div>
+      <Header />
       {
         <Routes>
           <Route path="/" element={<WelcomePage />} />
 
           <Route path="/dashboard" element={<Home />} />
           <Route path="/coursesPage" element={<CoursesPage />} />
-          <Route path="/formsPage" element={<FormsPage />} />
+          <Route path="/formsPage" element={<Forms />} />
           <Route
             path="/coursesElementsPage"
             element={<CoursesElementsPage />}
@@ -51,6 +53,8 @@ export function App() {
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       }
+    </div>
+      
     </div>
   );
 }

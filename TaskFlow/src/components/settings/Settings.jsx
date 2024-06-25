@@ -6,6 +6,7 @@ import "../../index.css";
 import { Notification } from './Notification';
 import { PasswordChange } from './PasswordChange';
 import { ContactTeacherForm } from './ContactTeacherForm';
+import { Logout } from './Logout';
 
 // Define el componente funcional Settings
 export function Settings() {
@@ -22,8 +23,9 @@ export function Settings() {
                     </div>  
             </section>
             {/* Renderiza contactTeacherForm, segunda sección de configuración */}
-            <div>
+            <div className='bg-[#FCF8EC]'>
                 <ContactTeacherForm />
+                <Logout />                
             </div>
         </section>
     )

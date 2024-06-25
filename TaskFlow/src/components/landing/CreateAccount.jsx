@@ -12,7 +12,7 @@ export function CreateAccount() {
   return (
     <div>
       {/* Sección principal con fondo oscuro y contenido centrado */}
-      <div className="text-center md:bg-[#212121] py-20 md:py-[10rem]">
+      <div className="text-center bg-[#212121] py-20 md:py-[10rem]">
         {/* Título para crear una cuenta */}
         <h1 className="text-2xl md:text-4xl font-bold mb-8 md:mb-[2rem] text-white">
           Create your account and keep
