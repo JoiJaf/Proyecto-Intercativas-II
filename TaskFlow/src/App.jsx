@@ -30,7 +30,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<WelcomePage />} />
 
-          <Route path="/dashboard" element={<Home />} />
+          <Route path="/home/:id" element={<Home />} />
           <Route path="/coursesPage" element={<CoursesPage />} />
           <Route path="/formsPage" element={<Forms />} />
           <Route
