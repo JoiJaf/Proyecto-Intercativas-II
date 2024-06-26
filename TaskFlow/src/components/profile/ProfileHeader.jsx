@@ -2,7 +2,8 @@
 import "../../index.css";
 
 // Define componente funcional ProfileHeader
-export function ProfileHeader() {
+export function ProfileHeader({name, email}) {
+  
     return (
         // Contenedor principal de inicio del perfil de usuario
         <div className="grid grid-cols-3 gap-4 items-center max-md:grid-cols-1">
@@ -12,8 +13,8 @@ export function ProfileHeader() {
           </div>
           {/* Información del usuario: nombre y correo electrónico */}
           <div className="flex flex-col max-md:items-center">
-            <h1 className="mt-[2.375rem] clamp-xxl font-bold">María Segura Umaña</h1>
-            <p className="text-[#A7A7A7] clamp-md">mariaumasegur@example.com</p>
+            <h1 className="mt-[2.375rem] clamp-xxl font-bold">{ name }</h1>
+            <p className="text-[#A7A7A7] clamp-md">{ email }</p>
           </div>
           {/* Contenedor del botón de envío del formulario */}
           <div className="flex justify-center items-center p-4 max-md:mb-[2.375rem]">
@@ -21,4 +22,11 @@ export function ProfileHeader() {
           </div>
         </div>
       );
+}
+
+ProfileHeader.defaultProps = {
+  
+  name: 'María Segura Umaña',
+  email: 'mariaumasegur@example.com'
+
 }

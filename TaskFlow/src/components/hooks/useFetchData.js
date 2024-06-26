@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
 export const useFetchData = () => {
-  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
-
+  const [data, setData] = useState([]);
+ 
   const getData = async () => {
     console.log("antes del try");
     try {

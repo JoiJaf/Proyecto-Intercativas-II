@@ -4,9 +4,59 @@ import "../../index.css";
 import { ProfileHeader } from "./ProfileHeader";
 import { PersonalInformation } from "./PersonalInformation";
 import { HealthCondition } from "./HealthCondition";
+import { useFetchUsers } from  "../hooks/useFetchUsers.js";
+import Cookies from 'js-cookie';
 
 // Define el componente funcional Profile
 export function Profile() {
+
+  const { data } = useFetchUsers();
+  console.log('longitudArray: ' + data.length);
+  const datos = Cookies.get('auth');
+  console.log('Cookies:' + datos);
+  
+  const getUserIdFromCookie = () => {
+
+    const authData = Cookies.get('auth');
+
+    if (authData) {
+      const parsedAuthData = JSON.parse(authData);
+      return parsedAuthData.user_specific_id;
+    }
+    return null;
+  };
+
+  const filteredItem = () => {
+
+    const id = getUserIdFromCookie();
+    
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].id === parseInt(id)) {
+        return data[i];
+      }
+    }
+    
+    return null;
+  };
+  
+
+  const dataUser = (item) => {
+    
+    if (!item) {
+
+      return <p>No existen detalles para este ID.</p>;
+
+    }return(
+
+    <ProfileHeader 
+      key = {item.id} 
+      name = {item.user_name}
+      email = {item.email}
+    />
+    
+    );
+  }
+
   return (
     // Contenedor principal con estilos para el componente perfil
     <section className="grid relative lg:w-full mb-[2.37rem]">
@@ -16,7 +66,7 @@ export function Profile() {
       <form method="post" action="#">
       {/* Renderiza ProfileHeader, seccion principal de perfil */}
       <section className="relative flex items-center justify-center m-[1.125rem]">
-        <ProfileHeader />
+        { dataUser(filteredItem()) }
       </section>
 
       {/* Renderiza PersonalInformation y HealthCondition, otras secciones de perfil */}
