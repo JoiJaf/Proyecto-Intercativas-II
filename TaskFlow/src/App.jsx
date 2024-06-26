@@ -19,37 +19,30 @@ import { NotificationPage } from "./components/routes/NotificationPage.jsx";
 import { InformationCoursePage } from "./components/routes/InformationCoursePage.jsx";
 import { ProfilePage } from "./components/routes/ProfilePage.jsx";
 import { Forms } from "./components/forms/Forms.jsx";
+import { PrivateRoute } from "./components/routes/PrivateRoute.jsx";
+import Cookies from 'js-cookie';
 
 export function App() {
+
+  const authData = Cookies.get("auth");
+
   return (
     <div>
 
-<div>
+    <div>
       <Header />
       {
         <Routes>
-          <Route path="/" element={<WelcomePage />} />
-
-          <Route path="/home/:id" element={<Home />} />
-          <Route path="/coursesPage" element={<CoursesPage />} />
-          <Route path="/formsPage" element={<Forms />} />
-          <Route
-            path="/coursesElementsPage"
-            element={<CoursesElementsPage />}
-          />
-          <Route path="/settingsPage" element={<SettingsPage />} />
-
-          <Route path="/notificationPage" element={<NotificationPage />} />
-          <Route
-            path="/informationCoursePage"
-            element={<InformationCoursePage />}
-          />
-          <Route path="/*" element={<Navigate to="/" />} />
-
-          <Route path="/schedulePage" element={<SchedulePage />} />
-
-          <Route path="/profilePage" element={<ProfilePage />} />
-
+          <Route path="/" element={authData ? <Navigate to="/home" replace /> : <WelcomePage />} />
+          <Route path="/formsPage" element={authData ? <Navigate to="/home" replace /> : <Forms />} />
+          <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
+          <Route path="/coursesPage" element={<PrivateRoute><CoursesPage /></PrivateRoute>} />
+          <Route path="/coursesElementsPage" element={<PrivateRoute><CoursesElementsPage /></PrivateRoute>} />
+          <Route path="/settingsPage" element={<PrivateRoute><SettingsPage /></PrivateRoute>} />
+          <Route path="/notificationPage" element={<PrivateRoute><NotificationPage /></PrivateRoute>} />
+          <Route path="/informationCoursePage" element={<PrivateRoute><InformationCoursePage /></PrivateRoute>} />
+          <Route path="/schedulePage" element={<PrivateRoute><SchedulePage /></PrivateRoute>} />
+          <Route path="/profilePage" element={<PrivateRoute><ProfilePage /></PrivateRoute>} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       }

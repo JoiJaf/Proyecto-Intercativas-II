@@ -6,6 +6,8 @@ import "../../index.css";
 import axios from 'axios';
 // Importa el hook useNavigate
 import { useNavigate } from "react-router-dom";
+//Importar Cookie
+import Cookies from 'js-cookie';
 
 // Define el componente funcional LoginForm
 export function LoginForm() {
@@ -41,19 +43,12 @@ export function LoginForm() {
           const jsonData = JSON.stringify(response.data)
           const parseData = JSON.parse(jsonData);
           const datosUsuario = parseData.usuario;
-          localStorage.setItem("auth", JSON.stringify(datosUsuario));
+          Cookies.set('auth', JSON.stringify(datosUsuario), {expires: 7}); //Expira en 7 días
           console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario); 
-
-          //Obtener el ID del usuario
-          const authData = localStorage.getItem("auth");
-          const parsedAuthData = JSON.parse(authData);
-          const userID = parsedAuthData.id;
-
-          console.log('usuario:' + userID);
 
           // Redireccionar al usuario a home después de un breve tiempo
           setTimeout(() => {
-            navigate('/home/' + userID);  
+            navigate('/home');  
           }, 1000); 
 
         } catch (error) {

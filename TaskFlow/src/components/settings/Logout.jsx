@@ -4,6 +4,8 @@ import React from 'react';
 import "../../index.css";
 // Importa el hook useNavigate
 import { useNavigate } from 'react-router-dom';
+//Importar Cookie
+import Cookies from 'js-cookie';
 
 // Define el componente funcional Logout
 export function Logout() {
@@ -13,12 +15,10 @@ export function Logout() {
 
     // Define un método handleLogout para cerrar la sesión
     const handleLogout = () => {
-        // Borra los datos de localStorage
-        //localStorage.clear();
-        localStorage.removeItem('auth');
-        console.log("Se ha borrado los datos del localStorage");
-        // Redige al usuario a la página de home
-        navigate('/home');
+        Cookies.remove('auth');
+        console.log("Se ha borrado la cookie de autenticación");
+        navigate('/');
+        window.location.reload();
     };
 
     // Renderiza el componente Logout
