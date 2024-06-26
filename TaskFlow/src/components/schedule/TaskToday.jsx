@@ -11,10 +11,14 @@ export function TaskToday() {
      * cada tarea tiene un id, un titulo, una descripcion, una hora y una imagen
      */
 
-    const {data, isLoading} = useFetchData();
+    const { data, isLoading } = useFetchData();
+    const authData = localStorage.getItem("auth");
+    const parsedAuthData = JSON.parse(authData);
+
+    console.log(parsedAuthData);
 
     console.log(data);
-    
+
 
     return (
         <>
