@@ -16,22 +16,24 @@ export function Profile() {
   console.log('Cookies:' + datos);
   
   const getUserIdFromCookie = () => {
-
     const authData = Cookies.get('auth');
-
+  
     if (authData) {
       const parsedAuthData = JSON.parse(authData);
-      return parsedAuthData.user_specific_id;
+      return {
+        user_specific_id: parsedAuthData.user_specific_id || null,
+        id: parsedAuthData.id || null
+      };
     }
-    return null;
+  
+    return { user_specific_id: null, id: null };
   };
 
   const filteredItem = () => {
-
-    const id = getUserIdFromCookie();
+    const { user_specific_id, id } = getUserIdFromCookie();
     
     for (let i = 0; i < data.length; i++) {
-      if (data[i].id === parseInt(id)) {
+      if (data[i].id === parseInt(id) || data[i].id === parseInt(user_specific_id)) {
         return data[i];
       }
     }
