@@ -15,7 +15,7 @@ export function LoginForm() {
 
     // Define un estado para el formulario de inicio de sesión y los datos del usuario
     const [formData, setFormData] = useState({
-        username: '',
+        emailAddress: '',
         password: ''
     });
 
@@ -74,9 +74,9 @@ export function LoginForm() {
     return (
         <div>
         <form onSubmit={handleSubmit}>
-            {/* Campo de entrada para el nombre de usuario */}
-            <div className='mt-16 mb-16 sm:mt-20 sm:mb-24'>
-                <input id='username' type='text' name='username' placeholder='Username' value={formData.username} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
+            {/* Campo de entrada para el correo electrónico */}
+            <div className='my-16 sm:my-20'>
+                <input id='emailAddress' type='email' name='emailAddress' placeholder='Email' value={formData.emailAddress} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
             </div>
             {/* Campo de entrada para la contraseña */}
             <div className='my-12 sm:my-28'>
