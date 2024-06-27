@@ -1,6 +1,8 @@
 // Importa el archivo CSS principal para estilos globales
 import "../../index.css";
 
+import { Footer } from "../basics/Footer";
+
 import { useFetchEvent } from "../hooks/useFetchEvent";
 
 import { useParams } from 'react-router-dom';
@@ -20,8 +22,9 @@ export function TaskDetail() {
     const createData = (data) => {
         console.log(data);
         return (
-            // Sección principal con estilos para el contenedor del curso
-            <section className="bg-white rounded-lg border border-[#E0E0E0] w-full sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto gap-4 mt-4 ">
+            <>
+             {/* Sección principal con estilos para el contenedor del curso*/}
+            <section className="bg-white rounded-lg border border-[#E0E0E0] w-full sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto gap-4 mt-4 mb-8">
                 {/* Contenedor de la imagen del curso */}
                 <div>
                     <img className="w-full h-[20rem] rounded-t-lg" src={"http://localhost/taskflowbackend/public/" + data[0].image} alt="#" />
@@ -57,6 +60,10 @@ export function TaskDetail() {
                     </div>
                 </div>
             </section>
+
+            <Footer/>
+
+            </>
         );
     }
 

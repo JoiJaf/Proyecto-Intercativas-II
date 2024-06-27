@@ -32,25 +32,25 @@ export function SignInForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post('http://taskflowbackend.test/api/singInData', formData, {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          });
-           // Respuesta de Laravel en la consola
-           console.log(response.data); 
+            const response = await axios.post('http:localhost/taskflowbackend/public/api/singInData', formData, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            // Respuesta de Laravel en la consola
+            console.log(response.data);
 
-           //Obtener datos de la respuesta
-           const jsonData = JSON.stringify(response.data)
-           const parseData = JSON.parse(jsonData);
-           const datosUsuario = parseData.usuario;
-           Cookies.set('auth', JSON.stringify(datosUsuario), {expires: 3}); //Expira en 3 días
-           console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario); 
-    
-          // Redireccionar al usuario a home después de un breve tiempo
-          setTimeout(() => {
-            navigate('/home');   
-          }, 1000); 
+            //Obtener datos de la respuesta
+            const jsonData = JSON.stringify(response.data)
+            const parseData = JSON.parse(jsonData);
+            const datosUsuario = parseData.usuario;
+            Cookies.set('auth', JSON.stringify(datosUsuario), { expires: 3 }); //Expira en 3 días
+            console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario);
+
+            // Redireccionar al usuario a home después de un breve tiempo
+            setTimeout(() => {
+                navigate('/home');
+            }, 1000);
 
         } catch (error) {
 
@@ -69,24 +69,24 @@ export function SignInForm() {
 
     return (
         <div>
-        <form onSubmit={handleSubmit}>
-            {/* Campo de entrada para el nombre de usuario */}
-            <div className='mt-16 mb-16 sm:mb-20'>
-                <input id='username' type='text' name='username' placeholder='Username' value={formData.username} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
-            </div>
-            {/* Campo de entrada para el correo electrónico */}
-            <div className='my-16 sm:my-20'>
-                <input id='emailAddress' type='email' name='emailAddress' placeholder='Email' value={formData.emailAddress} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
-            </div>
-            {/* Campo de entrada para la contraseña */}
-            <div className='my-16 sm:my-20'>
-                <input id='password' type='password' name='password' placeholder='Password' value={formData.password} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
-            </div>
-            {/* Botón de envío del formulario */}
-            <div >
-                <input type='submit' value='SIGN IN' className='bg-[#0E0E0E] clamp-md hover:bg-green-600 text-white py-4 px-4 rounded-md w-full font-bold' />
-            </div>
-        </form>
+            <form onSubmit={handleSubmit}>
+                {/* Campo de entrada para el nombre de usuario */}
+                <div className='mt-16 mb-16 sm:mb-20'>
+                    <input id='username' type='text' name='username' placeholder='Username' value={formData.username} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
+                </div>
+                {/* Campo de entrada para el correo electrónico */}
+                <div className='my-16 sm:my-20'>
+                    <input id='emailAddress' type='email' name='emailAddress' placeholder='Email' value={formData.emailAddress} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
+                </div>
+                {/* Campo de entrada para la contraseña */}
+                <div className='my-16 sm:my-20'>
+                    <input id='password' type='password' name='password' placeholder='Password' value={formData.password} onChange={handleChange} className='form-input border-b-2 clamp-md border-black w-full placeholder-[#0E0E0E]' />
+                </div>
+                {/* Botón de envío del formulario */}
+                <div >
+                    <input type='submit' value='SIGN IN' className='bg-[#0E0E0E] clamp-md hover:bg-green-600 text-white py-4 px-4 rounded-md w-full font-bold' />
+                </div>
+            </form>
         </div>
     );
 }
