@@ -4,16 +4,17 @@ import "../../index.css";
 import { useFetchEvent } from "../hooks/useFetchEvent";
 
 import { useParams } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 
 // Define el componente funcional Course
 export function TaskDetail() {
 
 
-    const { id } = useParams();
-    console.log(id);
+    const id = useLocation();
+    console.log(id.state);
 
-    const { data, isLoading } = useFetchEvent(5);
+    const { data, isLoading } = useFetchEvent(id.state);
     console.log(data);
 
     const createData = (data) => {
