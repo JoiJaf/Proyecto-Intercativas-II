@@ -11,6 +11,7 @@ import { SettingsPage } from "./components/routes/SettingsPage.jsx";
 import { SchedulePage } from "./components/routes/SchedulePage.jsx";
 
 import { AddEvent } from "./components/windows/AddEvent.jsx";
+import {TaskDetail} from "./components/schedule/TaskDetail.jsx";
 
 //Routes
 import { Navigate, Route, Routes } from "react-router-dom";
@@ -37,6 +38,7 @@ export function App() {
           <Route path="/formsPage" element={authData ? <Navigate to="/home" replace /> : <Forms />} />
           <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
           <Route path="/coursesPage" element={<PrivateRoute><CoursesPage /></PrivateRoute>} />
+          <Route path="/eventPage" element={<PrivateRoute><TaskDetail /></PrivateRoute>} />
           <Route path="/coursesElementsPage" element={<PrivateRoute><CoursesElementsPage /></PrivateRoute>} />
           <Route path="/settingsPage" element={<PrivateRoute><SettingsPage /></PrivateRoute>} />
           <Route path="/notificationPage" element={<PrivateRoute><NotificationPage /></PrivateRoute>} />

@@ -22,7 +22,7 @@ export function Stadistics() {
             <div className='flex gap-[1vw] justify-center items-center'>
                 <div className='md:flex md:gap-[3rem] gap-4 grid'>
                     {/* contenedor para la parte de las tareas sin completar */}
-                    <div className="grid border-solid border-2 border-[#E0E0E0] md:w-[15vw] w-auto p-[2rem] rounded-[3rem] bg-white hover:rotate-[360deg] hover:transition-transform hover:duration-[1.2s]">
+                    <div className="grid border-solid border-2 border-[#E0E0E0] md:w-[15vw] w-auto p-[2rem] rounded-[3rem] bg-white hover:scale-[1.1] hover:transition-transform hover:duration-[1.2s]">
                         <p className="md:text-2xl text-[1rem] font-semibold">8</p>
                         <hr className='bg-[#6BDD8F] h-2 w-8 mb-[2vw]' />
                         <p className="md:text-[1.5vw] font-light md:pb-[3rem] text-[#979797]">Uncompleted tasks</p>
