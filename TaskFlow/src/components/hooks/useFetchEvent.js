@@ -1,23 +1,18 @@
 import { useEffect, useState } from "react";
-import Cookies from 'js-cookie';
 
-export const useFetchData = (id) => {
+export const useFetchEvent = (id) => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
-  const datos = Cookies.get('auth');
-  const userId = JSON.parse(datos).id;
  
   const getData = async () => {
-    console.log("antes del try");
     try {
-      const response = await fetch("http://localhost/taskflowbackend/public/api/events/"+id);
+      const response = await fetch("http://localhost/taskflowbackend/public/api/event/"+id);
       console.log(id);
       //const data = await response.json();
       const events = await response.json();
       setData(events);
       setIsLoading(false);
 
-      console.log("en el try");
     } catch (error) {
       console.log(error);
     }
@@ -27,7 +22,7 @@ export const useFetchData = (id) => {
     getData();
   }, []);
 
-  console.log(data);
+
   return {
     data,
     isLoading,

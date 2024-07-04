@@ -1,8 +1,8 @@
 // Importa el archivo CSS principal
 import "../../index.css";
-// Importa el hook useNavigate
-import { useFetchData } from "../hooks/useFetchData";
+import { useFetchCategory } from "../hooks/useFetchCategories";
 import Cookies from 'js-cookie';
+
 import { Link } from "react-router-dom";
 /**
  * Crea un componente TaskToday
@@ -13,7 +13,7 @@ export function TaskToday() {
      * Areglo de tareas
      * cada tarea tiene un id, un titulo, una descripcion, una hora y una imagen
      */
-                
+
     const authData = Cookies.get("auth");
     console.log('estos son los benditos cookies' + authData);
 
@@ -22,7 +22,7 @@ export function TaskToday() {
         const id = objet.id;
         console.log('ID del usuario:', id);
 
-        const { data, isLoading } = useFetchData(id);
+        const { data, isLoading } = useFetchCategory(id);
 
         console.log('cochinos eventos aca:'+data);
     
@@ -62,6 +62,10 @@ export function TaskToday() {
         {isLoading ? <p>Loading...</p> : createData(data)}
         </>
     )
+
+
+
+
 
     
 }

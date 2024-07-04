@@ -6,7 +6,7 @@ export const useFetchUsers = () => {
 
   const getData = async () => {
     try{
-      const response = await fetch("http://taskflowbackend.test/api/userSpecific/all");
+      const response = await fetch("http:localhost/taskflowbackend/public/api/userSpecific/all");
       const data = await response.json();
       setData(data);
       console.log(data)

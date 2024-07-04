@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
-import Cookies from 'js-cookie';
 
-export const useFetchData = (id) => {
+export const useFetchSearchCategory = (id) => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
-  const datos = Cookies.get('auth');
-  const userId = JSON.parse(datos).id;
  
   const getData = async () => {
     console.log("antes del try");
