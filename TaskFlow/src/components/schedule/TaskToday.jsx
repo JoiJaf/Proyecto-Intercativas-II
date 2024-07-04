@@ -1,5 +1,6 @@
 // Importa el archivo CSS principal
 import "../../index.css";
+// Importa el hook useNavigate
 import { useFetchData } from "../hooks/useFetchData";
 /**
  * Crea un componente TaskToday
@@ -12,13 +13,10 @@ export function TaskToday() {
      */
 
     const { data, isLoading } = useFetchData();
-    const authData = localStorage.getItem("auth");
+    /*const authData = localStorage.getItem("auth");
     const parsedAuthData = JSON.parse(authData);
-
     console.log(parsedAuthData);
-
-    console.log(data);
-
+    console.log(data);*/
 
     return (
         <>
@@ -30,9 +28,10 @@ export function TaskToday() {
                         /**
                          * Muestra cada tarea en una div con un estilo determinado
                          */
-                        <div key={task.id} className="bg-white md:p-[2vw] p-[1.4rem] border-2 rounded-[2rem] flex mx-[2vw] justify-between pr-[4rem] mb-[2vw] hover:scale-[0.98] hover:duration-700 hover:border-[#9d9d9d]">
+    
+                        <div className="bg-white md:p-[2vw] p-[1.4rem] border-2 rounded-[2rem] flex mx-[2vw] justify-between pr-[4rem] mb-[2vw] hover:scale-[0.98] hover:duration-700 hover:border-[#9d9d9d]">
                             <div className="flex">
-                                <img className="md:w-[12vw] w-[20vw] md:h-[8vw] h-[15vw]" src={task.image} alt="" />
+                                <img className="md:w-[12vw] w-[20vw] md:h-[8vw] h-[15vw]" src={task.image} alt="image" />
                                 <div className="ml-[10vw] md:mr-0  flex flex-col justify-center">
                                     <p className="md:text-[1.5rem] text-[1rem] font-semibold m-0">{task.title}</p>
                                     <p className="md:text-[1.3rem] text-[.8rem] mb-[1vw] m-0">{task.description}</p>
@@ -41,6 +40,7 @@ export function TaskToday() {
                             </div>
                             <input className="w-[3vw] ml-6" type="checkbox" value="" />
                         </div>
+                    
                     ))}
                 </div>
 

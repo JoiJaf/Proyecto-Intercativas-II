@@ -13,7 +13,7 @@ export function TaskCard({ imageUrl, title, category, estimatedTime }) {
     return (
         <div className="border-4 border-[#fff] flex gap-[2vw] items-center mb-[1rem] rounded-[1rem] hover:scale-[0.95] hover:duration-700">
             {/* task image */}
-            <img className="md:w-[11vw] w-[25vw] rounded-[1rem_0_0_1rem]" src={imageUrl} alt="" />
+            <img className="md:w-[11vw] w-[25vw] rounded-[1rem_0_0_1rem]" src={imageUrl} alt="imagen" />
             {/* task information */}
             <div className="md:text-[1.2vw] text-[2.2vw]">
                 {/* task title */}
@@ -26,3 +26,14 @@ export function TaskCard({ imageUrl, title, category, estimatedTime }) {
         </div>
     );
 }
+
+
+TaskCard.defaultProps = {
+  
+    imageUrl: '/default-image.png',
+    title: 'Tarea',
+    category: 'Universidad',
+    estimatedTime: '10:00pm'
+  
+  }
+  

@@ -3,6 +3,7 @@ import "../../index.css";// Importa estilos globales
 
 import React, { useState } from 'react';// Importa React y el hook useState
 
+
 export function Header() { // Define el componente Header como una función de React
 
   // Definicion de los dos estados locales usando el hook useState
@@ -23,7 +24,7 @@ export function Header() { // Define el componente Header como una función de R
       <div className="container px-6 py-4 mx-auto flex justify-between items-center">{/* Contenedor de navbar*/}
         <div className="flex items-center">{/* Contenedor para el logo */}
           <a href="/welcomePage">
-            <img className="w-auto h-6 sm:h-9 object-contain" src={logo} alt="" />
+            <img className="w-auto h-6 sm:h-9 object-contain" src={logo} alt="logo" />
           </a>
 
         </div>
@@ -189,7 +190,7 @@ export function Header() { // Define el componente Header como una función de R
                 Calendar
               </a>
 
-              <a href="/coursesPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/coursesPage" class="flex items-center px-3 py-2 mx-3 mt-2 text-gray-200 hover:text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100 hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -204,7 +205,7 @@ export function Header() { // Define el componente Header como una función de R
                 Courses
               </a>
 
-              <a href="/settingsPage" class="text-gray-200 hover:text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-3 mx-3 flex items-center transition-colors duration-300 transform rounded-md hover:rounded-md">
+              <a href="/settingsPage" class="flex items-center px-3 py-2 mx-3 mt-2 text-gray-200 hover:text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100 hover:rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings w-8 h-8 mr-2 stroke-current hover:stroke-gray-600"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
