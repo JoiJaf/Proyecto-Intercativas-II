@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Cookies from 'js-cookie';
 
 export const useFetchData = (id) => {
+  
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   const datos = Cookies.get('auth');

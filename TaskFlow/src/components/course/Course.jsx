@@ -45,5 +45,5 @@ Course.propTypes = {
 Course.defaultProps = {
     name: 'Course name',
     description: 'Course description',
-    image: 'Course image',
+    image: 'https://images.squarespace-cdn.com/content/v1/60794dbc8615125d3ad57026/adf94af6-7aab-4503-9569-527b9faec977/react1logo.png',
 };

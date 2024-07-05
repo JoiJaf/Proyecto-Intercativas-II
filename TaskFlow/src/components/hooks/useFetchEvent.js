@@ -6,7 +6,7 @@ export const useFetchEvent = (id) => {
  
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost/taskflowbackend/public/api/event/"+id);
+      const response = await fetch("http://localhost/taskflowbackend/public/api/events/"+id);
       console.log(id);
       //const data = await response.json();
       const events = await response.json();
