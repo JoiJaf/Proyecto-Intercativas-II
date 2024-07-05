@@ -45,7 +45,7 @@ export function LoginForm() {
           const parseData = JSON.parse(jsonData);
           const datosUsuario = parseData.usuario;
           Cookies.set('auth', JSON.stringify(datosUsuario), {expires: 7}); //Expira en 7 días
-          console.log('Se ha guardado los datos del usuario en el localStorage:', datosUsuario); 
+          console.log('Se ha guardado los datos del usuario:', datosUsuario); 
 
           // Redireccionar al usuario a home después de un breve tiempo
           setTimeout(() => {

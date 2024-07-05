@@ -4,6 +4,9 @@ import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circ
 import 'react-circular-progressbar/dist/styles.css';
 // importa el archivo CSS principal
 import "../../index.css";
+
+import { useFetchEvent } from "../hooks/useFetchEvent";
+
 // Define el componente de estadisticas
 export function Stadistics() {
 
@@ -12,6 +15,21 @@ export function Stadistics() {
     const value = progress;
     // se estable el componente de la barra de progreso con los valores que estarán en él
     <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} styles={{}} />;
+
+    const { data, isLoading } = useFetchEvent();
+
+    // cuenta el número total de eventos
+    const countEvents = () => {
+        return data.length;
+    };
+
+    // cuenta el número de eventos "Activo"
+    const countActiveEvents = () => {
+        return data.filter(event => event.status === 'Activo').length;
+    };
+
+    const numberOfTasks = countEvents();
+    const numberOfUncompletes = countActiveEvents();
 
     return (
         // Contenedor para agregar el fondo y paddings
@@ -23,7 +41,7 @@ export function Stadistics() {
                 <div className='md:flex md:gap-[3rem] gap-4 grid'>
                     {/* contenedor para la parte de las tareas sin completar */}
                     <div className="grid border-solid border-2 border-[#E0E0E0] md:w-[15vw] w-auto p-[2rem] rounded-[3rem] bg-white hover:scale-[1.1] hover:transition-transform hover:duration-[1.2s]">
-                        <p className="md:text-2xl text-[1rem] font-semibold">8</p>
+                        <p className="md:text-2xl text-[1rem] font-semibold">{numberOfUncompletes}</p>
                         <hr className='bg-[#6BDD8F] h-2 w-8 mb-[2vw]' />
                         <p className="md:text-[1.5vw] font-light md:pb-[3rem] text-[#979797]">Uncompleted tasks</p>
                     </div>
@@ -33,7 +51,7 @@ export function Stadistics() {
                         <div className='flex justify-between px-4 pb-2'>
                             <p className='text-[#979797] md:text-[1rem] text-[.8rem] font-light md:w-[15vw] pt-[1rem]'>So far, you've completed tasks this week</p>
                             <div className='flex'>
-                                <p className='md:text-2xl text-[1rem] font-semibold pt-[1rem] pr-8'>2/10</p>
+                                <p className='md:text-2xl text-[1rem] font-semibold pt-[1rem] pr-8'>2/{numberOfTasks}</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle w-[3vw] hover:scale-[1.3] hover:duration-300" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />

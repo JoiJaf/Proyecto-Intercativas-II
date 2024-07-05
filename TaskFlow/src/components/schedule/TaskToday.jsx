@@ -3,6 +3,8 @@ import "../../index.css";
 // Importa el hook useNavigate
 import { useFetchEvent } from "../hooks/useFetchEvent";
 import { Link } from "react-router-dom";
+import Cookies from 'js-cookie';
+
 /**
  * Crea un componente TaskToday
  * Este componente muestra una secci n con las tareas para hoy
@@ -20,7 +22,7 @@ export function TaskToday() {
         if (isLoading || !data) {
             return <p className="flex justify-center items-center">Loading...</p>; 
         }
-    
+        
         //<Link state={task.id} to={`/eventPage/${task.id}`} className="flex"></Link>
         return (
             <>

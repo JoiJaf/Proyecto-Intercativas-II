@@ -16,6 +16,7 @@ import "../../index.css";
  *
  */
 export function Stadistics() {
+  
   // Valor del progreso (porcentaje)
   var progress = 70;
   const value = progress;
