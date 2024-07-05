@@ -15,7 +15,7 @@ export function TaskToday() {
      */
                 
     const authData = Cookies.get("auth");
-    console.log('estos son los benditos cookies' + authData);
+    console.log('Estos son las cookies' + authData);
 
     if (authData) {
         const objet = JSON.parse(authData);
@@ -23,8 +23,7 @@ export function TaskToday() {
         console.log('ID del usuario:', id);
 
         const { data, isLoading } = useFetchData(id);
-
-        console.log('cochinos eventos aca:'+data);
+        console.log('Eventos acá:'+ data);
     
         return (
             <>
